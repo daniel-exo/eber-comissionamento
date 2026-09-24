@@ -49,22 +49,27 @@ Para **remover** alguém: apague o documento dela em `usuarios` e desative a con
 
 ## Estrutura do banco
 
-Coleção `checklists`, **um documento por checklist** (equipamento × especialidade). O ID do documento é o local do equipamento na lista + a especialidade:
+Coleção `centrais`, **um documento por equipamento central**. O ID é a área + o tag central, por exemplo `200.TNQ-2001` ou `200.A` para o grupo A. Dentro dele, o mapa `ck` guarda todos os checklists dos equipamentos daquele central:
 
 ```
-checklists/200.TNQ-2001.AGT-2001~MEC
+centrais/200.TNQ-2001
 {
   area:    "200",
-  loc:     "200.TNQ-2001.AGT-2001",
-  sec:     "MEC",
-  checked: { "MEC-AGT-01": true, "MEC-AGT-02": true, "MEC-AGT-05": false },
-  por:     "fulano@empresa.com",     // quem fez a última alteração
-  em:      <data e hora do servidor>
+  central: "TNQ-2001",
+  por:     "fulano@empresa.com",          // última alteração no documento
+  em:      <data e hora do servidor>,
+  ck: {
+    "200:TNQ-2001~OPE":          { checked: { "OPE-COM-01": true, ... }, por: "...", em: ... },
+    "200:TNQ-2001:AGT-2001~MEC": { checked: { "MEC-AGT-01": true, "MEC-AGT-02": false }, por: "...", em: ... },
+    ...
+  }
 }
 ```
 
-- O documento só passa a existir quando alguém marca o primeiro item. Checklist sem documento = não iniciado.
-- O status (não iniciado / em andamento / aprovado) não é gravado: o app calcula comparando `checked` com a lista de itens do tipo.
+- A chave de cada checklist é o local do equipamento na lista (com `:` no lugar de `.`) + `~` + especialidade.
+- Por que um documento por central, e não por checklist: cada abertura de área lê todos os documentos dela. Assim, abrir a área 400 lê 41 documentos em vez de até 1.770, e o uso fica folgado dentro da cota gratuita (50 mil leituras por dia), mesmo no fim da obra e com 10 pessoas.
+- O documento só passa a existir quando alguém marca o primeiro item daquele central. Checklist sem entrada = não iniciado. Item desmarcado fica gravado como `false`.
+- O status (não iniciado / em andamento / aprovado) não é gravado: o app calcula comparando `checked` com a lista de itens.
 - Coleção `usuarios`: um documento por pessoa liberada (ID = UID do login).
 
 ## Dados de referência (pasta `dados/`)
@@ -79,11 +84,11 @@ python ferramentas/gerar_dados.py EBER_Lista_de_Equipamentos_Consolidado.xlsx fe
 
 **IDs estáveis.** O arquivo `ferramentas/registro-ids.json` fixa o código de cada tarefa (ex.: `MEC-AGT-03`). Uma tarefa já registrada nunca muda de código, mesmo que a ordem mude no book; uma tarefa nova ganha o próximo número livre. Isso garante que as marcações gravadas nunca "pulem" para outro item. Se uma tarefa tiver só o texto corrigido, edite o registro trocando o texto antigo pelo novo, para ela manter o código.
 
-**Operação.** As 7 tarefas comuns (`OPE-COM-01` a `07`) entram apenas nos tags que são **equipamento central** na lista (coluna "TAG DO EQUIPAMENTO CENTRAL", fora dos grupos A/B). As tarefas específicas de cada tipo valem para todos os tags do tipo.
+**Operação.** As 7 tarefas comuns (`OPE-COM-01` a `07`) entram apenas nos tags que são **equipamento central** na lista (coluna "TAG DO EQUIPAMENTO CENTRAL", fora dos grupos A/B). As tarefas específicas de cada tipo valem para todos os tags do tipo. O Book de Comissionamento segue a mesma regra e usa os mesmos códigos: ele lê este registro de IDs ao ser gerado.
 
 ## Atualizações do app
 
-O app se atualiza sozinho: ao abrir, usa a versão guardada e baixa a nova em segundo plano, que passa a valer na abertura seguinte. Ao publicar uma mudança grande, troque `eber-comiss-v1` para `v2` no `sw.js` para renovar o que fica guardado nos aparelhos.
+O app se atualiza sozinho: ao abrir, usa a versão guardada e baixa a nova em segundo plano, que passa a valer na abertura seguinte. Ao publicar uma mudança grande, aumente o número em `eber-comiss-v2` no `sw.js` (v3, v4…) para renovar o que fica guardado nos aparelhos.
 
 ## Arquivos
 

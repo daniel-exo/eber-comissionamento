@@ -1,7 +1,7 @@
 // Service worker: guarda o app e os dados no aparelho para abrir sem internet.
 // Estratégia "stale-while-revalidate": abre na hora com o que está guardado e busca a versão nova
 // em segundo plano (vale a partir da próxima abertura). O tráfego do Firebase não passa por aqui.
-const CACHE = 'eber-comiss-v1';
+const CACHE = 'eber-comiss-v2';
 const ARQUIVOS = [
   './', 'index.html', 'app.css', 'manifest.webmanifest',
   'js/app.js', 'js/store.js', 'js/firebase-config.js', 'js/vendor/firebase.js',
