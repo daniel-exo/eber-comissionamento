@@ -205,12 +205,12 @@ img{max-width:100%}
 .spinner{padding:40px 0;text-align:center;color:var(--muted)}
 .upd{font-size:12.5px;color:var(--muted)}
 
-/* logos EBER + EXO e rodapé */
-.logos{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.logos .logo{align-self:center}
-.logo-exo{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:4px 12px;border-radius:8px;background:#1C1C1C}
-.logo-exo img{height:100%;width:auto}
-:root[data-theme="dark"] .logo-exo{height:58px}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logo-exo{height:58px}}
+/* logos EBER + EXO e rodapé: versão colorida no tema claro, versão branca no tema escuro, sem moldura */
+.logos{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.logos .logo{height:46px!important;width:auto;align-self:center;background:none!important;padding:0!important;border-radius:0}
+.logos .tema-escuro{display:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logos .tema-claro{display:none}:root:not([data-theme="light"]) .logos .tema-escuro{display:block}}
+:root[data-theme="dark"] .logos .tema-claro{display:none}
+:root[data-theme="dark"] .logos .tema-escuro{display:block}
 .rodape{max-width:780px;margin:0 auto;padding:24px 16px calc(24px + env(safe-area-inset-bottom,0px));text-align:center;font-size:12px;color:var(--faint)}
 body.com-nav .rodape{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
