@@ -209,6 +209,7 @@ img{max-width:100%}
 .logos{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .logos .logo{height:46px!important;width:auto;align-self:center;background:none!important;padding:0!important;border-radius:0}
 .logos .tema-escuro{display:none}
+.logos .logo.fallback{background:#fff!important;padding:4px 8px!important;border-radius:8px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .logos .tema-claro{display:none}:root:not([data-theme="light"]) .logos .tema-escuro{display:block}}
 :root[data-theme="dark"] .logos .tema-claro{display:none}
 :root[data-theme="dark"] .logos .tema-escuro{display:block}
