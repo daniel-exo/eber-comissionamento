@@ -2,11 +2,13 @@
 // Toda a leitura/gravação passa por store.js.
 import * as store from './store.js';
 
-const VERSAO = '1.3.0';
+const VERSAO = '1.3.1';
 const SECS = ['MEC', 'ELE', 'INS', 'OPE'];
 const SEC = { MEC: 'Mecânica', ELE: 'Elétrica', INS: 'Instrumentação', OPE: 'Operação' };
 const ONDE = { C: 'Campo', S: 'Supervisório', CS: 'Campo + Supervisório' };
-const LOGOS = `<div class="logos"><img class="logo" src="icones/logo.png" alt="EBER Bioenergia e Agricultura"><span class="logo-exo"><img src="icones/exo.png" alt="EXO Excelência Organizacional"></span></div>`;
+const LOGOS = `<div class="logos">
+  <img class="logo tema-claro" src="icones/logo.png" alt="EBER Bioenergia e Agricultura"><img class="logo tema-escuro" src="icones/eber-branco.png" alt="EBER Bioenergia e Agricultura">
+  <img class="logo tema-claro" src="icones/exo-escuro.png" alt="EXO Excelência Organizacional"><img class="logo tema-escuro" src="icones/exo.png" alt="EXO Excelência Organizacional"></div>`;
 const CHECK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
 
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
