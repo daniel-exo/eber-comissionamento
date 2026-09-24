@@ -3,7 +3,7 @@
 import {
   initializeApp, getAuth, onAuthStateChanged, signInWithEmailAndPassword, sendPasswordResetEmail, signOut,
   connectAuthEmulator, initializeFirestore, persistentLocalCache, persistentMultipleTabManager,
-  collection, doc, setDoc, getDoc, onSnapshot, query, where, serverTimestamp, connectFirestoreEmulator,
+  collection, doc, setDoc, getDoc, getDocs, onSnapshot, query, where, serverTimestamp, connectFirestoreEmulator,
 } from './vendor/firebase.js';
 import { firebaseConfig } from './firebase-config.js';
 
@@ -73,4 +73,10 @@ export function marcarItem(area, central, loc, sec, itemId, valor, email) {
     area, central, por: email, em: serverTimestamp(),
     ck: { [chave(loc, sec)]: { checked: { [itemId]: valor }, por: email, em: serverTimestamp() } },
   }, { merge: true });
+}
+
+// Leitura completa da coleção para exportação (todas as áreas; cerca de 90 documentos no total).
+export async function lerTudo() {
+  const snap = await getDocs(collection(fs, 'centrais'));
+  return { docs: snap.docs.map(d => ({ id: d.id, data: d.data({ serverTimestamps: 'estimate' }) })), doCache: snap.metadata.fromCache };
 }

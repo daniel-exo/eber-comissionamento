@@ -2,10 +2,11 @@
 // Toda a leitura/gravação passa por store.js.
 import * as store from './store.js';
 
-const VERSAO = '1.1.0';
+const VERSAO = '1.3.0';
 const SECS = ['MEC', 'ELE', 'INS', 'OPE'];
 const SEC = { MEC: 'Mecânica', ELE: 'Elétrica', INS: 'Instrumentação', OPE: 'Operação' };
 const ONDE = { C: 'Campo', S: 'Supervisório', CS: 'Campo + Supervisório' };
+const LOGOS = `<div class="logos"><img class="logo" src="icones/logo.png" alt="EBER Bioenergia e Agricultura"><span class="logo-exo"><img src="icones/exo.png" alt="EXO Excelência Organizacional"></span></div>`;
 const CHECK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
 
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
@@ -108,13 +109,15 @@ function renderSheet() {
       <dt>Versão</dt><dd class="num">${VERSAO}</dd></dl>
     <div class="row"><button class="btn pri" data-act="close">Fechar</button></div>
     <hr>
+    ${exportHtml()}
+    <hr>
     ${confirmSair
       ? `<p>${pendentes ? `<b>Há marcações ainda não enviadas.</b> Se sair agora, essas marcações podem ser perdidas. ` : ''}Confirma a saída?</p>
          <div class="row"><button class="btn danger" data-act="sair-ok">Sair</button><button class="btn" data-act="sair-no">Cancelar</button></div>`
       : `<div class="row"><button class="btn" data-act="sair">Sair da conta</button></div>`}
   </div>`;
 }
-function openSheet() { sheetOpen = true; confirmSair = false; renderSheet(); $scrim.hidden = false; }
+function openSheet() { sheetOpen = true; confirmSair = false; if (exp.etapa !== 'liberado') exp = { etapa: 'fechado', msg: '', senha: '' }; renderSheet(); $scrim.hidden = false; }
 function closeSheet() { sheetOpen = false; $scrim.hidden = true; $scrim.innerHTML = ''; }
 $sync.addEventListener('click', openSheet);
 $scrim.addEventListener('click', async e => {
@@ -124,9 +127,90 @@ $scrim.addEventListener('click', async e => {
   if (act === 'close') closeSheet();
   else if (act === 'sair') { confirmSair = true; renderSheet(); }
   else if (act === 'sair-no') { confirmSair = false; renderSheet(); }
+  else if (act === 'exp-abrir') { exp = { etapa: 'senha', msg: '', senha: '' }; renderSheet(); const i = document.getElementById('expsenha'); if (i) i.focus(); }
+  else if (act === 'exp-ok') await conferirSenha();
+  else if (act === 'exp-json' || act === 'exp-csv') await exportar(act === 'exp-json' ? 'json' : 'csv');
   else if (act === 'sair-ok') { closeSheet(); if (unsub) unsub(); unsub = null; areaAtiva = null; await store.sair(); }
 });
+$scrim.addEventListener('input', e => { if (e.target.id === 'expsenha') exp.senha = e.target.value; });
+$scrim.addEventListener('keydown', e => { if (e.target.id === 'expsenha' && e.key === 'Enter') { e.preventDefault(); conferirSenha(); } });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && sheetOpen) closeSheet(); });
+
+/* ---------------- exportação (protegida por senha) ----------------
+   A senha não fica escrita no código: guardamos só o resumo SHA-256 dela e comparamos com o resumo do que foi digitado. */
+const SENHA_SHA256 = '4b106388b810de25f640a68448b73c64c9233d96cdb384f724afdc2fda42821f';
+let exp = { etapa: 'fechado', msg: '', senha: '' };
+async function sha256(txt) {
+  const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(txt));
+  return Array.from(new Uint8Array(b)).map(x => x.toString(16).padStart(2, '0')).join('');
+}
+function exportHtml() {
+  const msg = exp.msg ? `<div class="msg ${exp.msgCls || ''}">${esc(exp.msg)}</div>` : '';
+  if (exp.etapa === 'fechado') return `<div class="row"><button class="btn" data-act="exp-abrir">Exportar dados…</button></div>`;
+  if (exp.etapa === 'senha') return `<p><b>Exportar dados.</b> Digite a senha de exportação.</p>${msg}
+    <label class="field" for="expsenha">Senha<input id="expsenha" type="password" autocomplete="off" value="${esc(exp.senha)}"></label>
+    <div class="row"><button class="btn pri" data-act="exp-ok">Continuar</button></div>`;
+  return `<p><b>Exportar dados</b> de todas as áreas.</p>${msg}
+    <div class="row"><button class="btn pri" data-act="exp-csv" ${exp.rodando ? 'disabled' : ''}>Planilha (CSV)</button>
+      <button class="btn" data-act="exp-json" ${exp.rodando ? 'disabled' : ''}>Backup (JSON)</button></div>`;
+}
+async function conferirSenha() {
+  let ok = false;
+  try { ok = (await sha256(exp.senha || '')) === SENHA_SHA256; } catch (e) {}
+  exp = ok ? { etapa: 'liberado', msg: '' } : { etapa: 'senha', msg: 'Senha incorreta.', msgCls: 'err', senha: '' };
+  renderSheet();
+}
+function baixar(nome, conteudo, tipo) {
+  const url = URL.createObjectURL(new Blob([conteudo], { type: tipo }));
+  const lnk = document.createElement('a'); lnk.href = url; lnk.download = nome;
+  document.body.appendChild(lnk); lnk.click(); lnk.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 5000);
+}
+const dataHora = d => d ? d.toLocaleDateString('pt-BR') + ' ' + d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }) : '';
+const tsData = ts => (ts && ts.toDate) ? ts.toDate() : null;
+async function exportar(formato) {
+  if (exp.etapa !== 'liberado') return;
+  exp.rodando = true; exp.msg = 'Lendo o banco…'; exp.msgCls = ''; renderSheet();
+  try {
+    const { docs: brutos, doCache: cache } = await store.lerTudo();
+    const carimbo = new Date().toISOString().slice(0, 16).replace('T', '_').replace(':', 'h');
+    if (formato === 'json') {
+      const conv = v => v && typeof v.toDate === 'function' ? v.toDate().toISOString()
+        : (v && typeof v === 'object') ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, conv(x)])) : v;
+      const saida = { exportadoEm: new Date().toISOString(), exportadoPor: user.email, versaoApp: VERSAO,
+        fonte: cache ? 'cache do aparelho (sem conexão)' : 'servidor', colecao: 'centrais',
+        documentos: brutos.map(d => ({ id: d.id, ...conv(d.data) })) };
+      baixar(`comissionamento-eber_${carimbo}.json`, JSON.stringify(saida, null, 1), 'application/json');
+    } else {
+      // uma linha por item de checklist, de todos os equipamentos das áreas (marcados ou não)
+      const ck = {};
+      brutos.forEach(d => { const m = d.data.ck || {}; for (const k in m) { const [l, s] = k.split('~'); ck[l.replace(/:/g, '.') + '~' + s] = m[k]; } });
+      const cab = ['Área', 'Equipamento central', 'Nível', 'Tag', 'Descrição', 'Tipo', 'Especialidade', 'Status do checklist',
+        'Itens marcados', 'Itens do checklist', 'Código do item', 'Tarefa', 'Onde', 'FGA', 'Marcado', 'Última alteração (checklist) por', 'Última alteração (checklist) em', 'Local na lista'];
+      const linhas = [cab];
+      const NIVEL = ['Equipamento central', 'Equipamento ligado', 'Subequipamento'];
+      for (const ar of AREAS) {
+        const a = await carregarArea(ar.id);
+        for (const c of a.centrais) for (const it of c.itens) for (const s of SECS) {
+          const list = listaDe(it, s); if (!list) continue;
+          const reg = ck[docId(it.loc, s)] || {}, chk = reg.checked || {};
+          const feitos = list.filter(t => chk[t.id] === true).length;
+          const status = feitos === 0 ? 'Não iniciado' : feitos === list.length ? 'Aprovado' : 'Em andamento';
+          for (const t of list) linhas.push([a.area, nomeCentral(c), NIVEL[it.n], it.tag, it.desc, L.tipos[it.cat].nome, SEC[s], status,
+            feitos, list.length, t.id, t.t, ONDE[t.o], t.fga ? 'X' : '', chk[t.id] === true ? 'Sim' : 'Não', reg.por || '', dataHora(tsData(reg.em)), it.loc]);
+        }
+      }
+      const cel = v => { const x = String(v == null ? '' : v); return /[;"\n\r]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x; };
+      // separador ";" e BOM UTF-8: o Excel em português abre direto, com acentos corretos
+      baixar(`comissionamento-eber_${carimbo}.csv`, '\ufeff' + linhas.map(l => l.map(cel).join(';')).join('\r\n'), 'text/csv;charset=utf-8');
+    }
+    exp.msg = (cache ? 'Atenção: sem conexão, o arquivo saiu com os dados guardados neste aparelho. ' : '') + 'Arquivo gerado. Veja a pasta de downloads.';
+    exp.msgCls = cache ? '' : 'ok';
+  } catch (e) {
+    exp.msg = 'Não foi possível exportar (' + (e && (e.code || e.message) || 'erro') + ').'; exp.msgCls = 'err';
+  }
+  exp.rodando = false; renderSheet();
+}
 window.addEventListener('online', syncUI);
 window.addEventListener('offline', syncUI);
 
@@ -163,6 +247,7 @@ const descCentral = c => c.pseudo ? c.desc : tcase(c.desc);
 
 function render() {
   $back.hidden = !user || nav.v === 'areas';
+  document.body.classList.toggle('com-nav', !!user && nav.v === 'check');
   $nav.innerHTML = '';
   if (!store.configurado) return viewSetup();
   if (!authPronto) { $view.innerHTML = '<div class="spinner">Carregando…</div>'; return; }
@@ -185,7 +270,7 @@ function refresh() {
 /* ---------------- telas ---------------- */
 function viewSetup() {
   crumb('Comissionamento', 'Configuração pendente');
-  $view.innerHTML = `<div class="login"><img class="logo" src="icones/logo.png" alt="EBER Bioenergia e Agricultura">
+  $view.innerHTML = `<div class="login">${LOGOS}
     <h1>Falta configurar o Firebase</h1>
     <p>Cole a configuração do app web do Firebase no arquivo <b>js/firebase-config.js</b>, como descrito no README do repositório.</p></div>`;
 }
@@ -194,7 +279,7 @@ let loginMsg = null;
 function viewLogin() {
   crumb('Comissionamento', 'EBER Bioenergia · Montes Claros de Goiás/GO');
   $view.innerHTML = `<form class="login" id="flogin" novalidate>
-    <img class="logo" src="icones/logo.png" alt="EBER Bioenergia e Agricultura">
+    ${LOGOS}
     <h1>Comissionamento pré-partida</h1>
     <p>Entre com o e-mail e a senha cadastrados pelo administrador.</p>
     ${loginMsg ? `<div class="msg ${loginMsg.cls}">${esc(loginMsg.txt)}</div>` : ''}
@@ -229,7 +314,7 @@ function viewLogin() {
 
 function viewSemAcesso() {
   crumb('Comissionamento', 'Acesso pendente');
-  $view.innerHTML = `<div class="login"><img class="logo" src="icones/logo.png" alt="EBER Bioenergia e Agricultura">
+  $view.innerHTML = `<div class="login">${LOGOS}
     <h1>Acesso ainda não liberado</h1>
     <p>Seu login funcionou, mas o administrador ainda precisa liberar este usuário. Envie a ele o código abaixo.</p>
     <div class="msg"><b>${esc(user.email)}</b><br><span class="num" style="word-break:break-all">${esc(user.uid)}</span></div>
@@ -246,7 +331,7 @@ function areaResumo(ar) {
 }
 function viewAreas() {
   crumb('Comissionamento', 'EBER Bioenergia · Montes Claros de Goiás/GO');
-  $view.innerHTML = `<section class="hero"><img class="logo" src="icones/logo.png" alt="EBER Bioenergia e Agricultura">
+  $view.innerHTML = `<section class="hero">${LOGOS}
       <h1>Comissionamento pré-partida</h1><p>Mecânica · Elétrica · Instrumentação · Operação</p></section>
     <h2 class="lbl">Áreas</h2>
     <div class="list">${AREAS.map(ar => {
