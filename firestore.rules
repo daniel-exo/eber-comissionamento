@@ -1,0 +1,32 @@
+rules_version = '2';
+// Regras de segurança do banco. Cole este conteúdo em: Console do Firebase → Firestore Database → Regras → Publicar.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Só entra quem tem login E foi liberado pelo administrador (documento usuarios/<uid>).
+    function liberado() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/usuarios/$(request.auth.uid));
+    }
+
+    // Um documento por checklist: <local na lista>~<especialidade>, ex. 200.TNQ-2001.AGT-2001~MEC
+    match /checklists/{id} {
+      allow read: if liberado();
+      allow create, update: if liberado()
+        && request.resource.data.keys().hasOnly(['area', 'loc', 'sec', 'checked', 'por', 'em'])
+        && request.resource.data.area in ['200', '300', '400', '700']
+        && request.resource.data.sec in ['MEC', 'ELE', 'INS', 'OPE']
+        && id == request.resource.data.loc + '~' + request.resource.data.sec
+        && request.resource.data.checked is map
+        && request.resource.data.por == request.auth.token.email
+        && request.resource.data.em == request.time;
+      allow delete: if false;     // ninguém apaga checklists pelo app
+    }
+
+    // Lista de usuários liberados: cada um só lê o próprio registro; só o administrador edita (pelo console).
+    match /usuarios/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+  }
+}

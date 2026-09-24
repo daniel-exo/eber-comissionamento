@@ -1,0 +1,1133 @@
+{
+ "ELE-ACV": {
+  "Conferir polaridade (+/−) nos bornes indicados na RTS e no posicionador.": "ELE-ACV-04",
+  "Testar continuidade e isolamento do cabo de sinal 4–20 mA.": "ELE-ACV-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel).": "ELE-ACV-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (posicionador e borneira do painel remoto).": "ELE-ACV-01",
+  "Verificar vedação do invólucro do posicionador e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-ACV-05"
+ },
+ "ELE-AIT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-AIT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-AIT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-AIT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-AIT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-AIT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-AIT-06"
+ },
+ "ELE-DIT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-DIT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-DIT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-DIT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-DIT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-DIT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-DIT-06"
+ },
+ "ELE-FCV": {
+  "Conferir polaridade (+/−) nos bornes indicados na RTS e no posicionador.": "ELE-FCV-04",
+  "Testar continuidade e isolamento do cabo de sinal 4–20 mA.": "ELE-FCV-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel).": "ELE-FCV-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (posicionador e borneira do painel remoto).": "ELE-FCV-01",
+  "Verificar vedação do invólucro do posicionador e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-FCV-05"
+ },
+ "ELE-FIT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-FIT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-FIT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-FIT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-FIT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-FIT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-FIT-06"
+ },
+ "ELE-FSL": {
+  "Conferir os bornes (+/−) indicados na RTS e o tipo de contato (NA/NF) contra a lógica.": "ELE-FSL-03",
+  "Medir a alimentação do sensor, quando for sensor alimentado (não contato seco).": "ELE-FSL-04",
+  "Testar continuidade e isolamento do cabo.": "ELE-FSL-02",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (chave e borneira XED do painel remoto).": "ELE-FSL-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-FSL-05"
+ },
+ "ELE-KSC": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-KSC-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-KSC-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-KSC-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-KSC-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-KSC-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-KSC-06"
+ },
+ "ELE-LCV": {
+  "Conferir polaridade (+/−) nos bornes indicados na RTS e no posicionador.": "ELE-LCV-04",
+  "Testar continuidade e isolamento do cabo de sinal 4–20 mA.": "ELE-LCV-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel).": "ELE-LCV-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (posicionador e borneira do painel remoto).": "ELE-LCV-01",
+  "Verificar vedação do invólucro do posicionador e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-LCV-05"
+ },
+ "ELE-LIT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-LIT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-LIT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-LIT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-LIT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-LIT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-LIT-06"
+ },
+ "ELE-LS": {
+  "Conferir os bornes (+/−) indicados na RTS e o tipo de contato (NA/NF) contra a lógica.": "ELE-LS-03",
+  "Medir a alimentação do sensor, quando for sensor alimentado (não contato seco).": "ELE-LS-04",
+  "Testar continuidade e isolamento do cabo.": "ELE-LS-02",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (chave e borneira XED do painel remoto).": "ELE-LS-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-LS-05"
+ },
+ "ELE-LSH": {
+  "Conferir os bornes (+/−) indicados na RTS e o tipo de contato (NA/NF) contra a lógica.": "ELE-LSH-03",
+  "Medir a alimentação do sensor, quando for sensor alimentado (não contato seco).": "ELE-LSH-04",
+  "Testar continuidade e isolamento do cabo.": "ELE-LSH-02",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (chave e borneira XED do painel remoto).": "ELE-LSH-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-LSH-05"
+ },
+ "ELE-LSL": {
+  "Conferir os bornes (+/−) indicados na RTS e o tipo de contato (NA/NF) contra a lógica.": "ELE-LSL-03",
+  "Medir a alimentação do sensor, quando for sensor alimentado (não contato seco).": "ELE-LSL-04",
+  "Testar continuidade e isolamento do cabo.": "ELE-LSL-02",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (chave e borneira XED do painel remoto).": "ELE-LSL-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-LSL-05"
+ },
+ "ELE-PCV": {
+  "Conferir polaridade (+/−) nos bornes indicados na RTS e no posicionador.": "ELE-PCV-04",
+  "Testar continuidade e isolamento do cabo de sinal 4–20 mA.": "ELE-PCV-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel).": "ELE-PCV-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (posicionador e borneira do painel remoto).": "ELE-PCV-01",
+  "Verificar vedação do invólucro do posicionador e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-PCV-05"
+ },
+ "ELE-PDIT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-PDIT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-PDIT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-PDIT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-PDIT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-PDIT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-PDIT-06"
+ },
+ "ELE-PI": {
+  "Confirmar em campo que o instrumento é de indicação local, sem ligação elétrica prevista no P&ID e sem cabo instalado; registrar a verificação como concluída na folha de Elétrica.": "ELE-PI-01"
+ },
+ "ELE-PIT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-PIT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-PIT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-PIT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-PIT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-PIT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-PIT-06"
+ },
+ "ELE-PSLL": {
+  "Conferir os bornes (+/−) indicados na RTS e o tipo de contato (NA/NF) contra a lógica.": "ELE-PSLL-03",
+  "Medir a alimentação do sensor, quando for sensor alimentado (não contato seco).": "ELE-PSLL-04",
+  "Testar continuidade e isolamento do cabo.": "ELE-PSLL-02",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (chave e borneira XED do painel remoto).": "ELE-PSLL-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-PSLL-05"
+ },
+ "ELE-SC": {
+  "Conferir parametrização e atuação das proteções elétricas (disjuntor, relé, inversor/soft-starter, quando aplicável).": "ELE-SC-05",
+  "Conferir tensão, potência, corrente, frequência, regime e ligação do motor/equipamento com a plaqueta e projeto.": "ELE-SC-01",
+  "Medir a corrente em vazio (motor desacoplado) e comparar com a indicação no supervisório.": "ELE-SC-15",
+  "Medir resistência de isolamento e continuidade dos circuitos antes da energização.": "ELE-SC-04",
+  "Nos 6 motores do pacote OMEL da área 700 (SC-70006/07/19/20/21/22), o P&ID numera a partida como SFT-70001 a 70006 (soft-starter): conferir a correspondência no painel antes do teste.": "ELE-SC-06",
+  "Partida instantânea para confirmar o sentido de rotação, com o motor desacoplado sempre que possível.": "ELE-SC-07",
+  "RTS-CCM: botoeiras de EMERGÊNCIA, LIGA, DESLIGA, LOCAL/REMOTO e RESET correspondendo ao simulado.": "ELE-SC-13",
+  "RTS-CCM: histórico das variáveis definidas para registro operando.": "ELE-SC-14",
+  "RTS-CCM: indicação de ERRO correspondente ao erro simulado, e RESET do erro operando.": "ELE-SC-09",
+  "RTS-CCM: indicações de TORQUE, CORRENTE, POTÊNCIA e RPM coerentes com a simulação (marcar NA onde a partida não fornece o dado).": "ELE-SC-10",
+  "RTS-CCM: status LOCAL/REMOTO correto.": "ELE-SC-12",
+  "RTS-CCM: status de LIGADO, DESLIGADO e FALHA corretos.": "ELE-SC-11",
+  "RTS-CCM: status de REDE correspondente ao simulado, com o IP do dispositivo conforme a RTS.": "ELE-SC-08",
+  "Verificar aterramento/equipotencialização do equipamento e do motor.": "ELE-SC-03",
+  "Verificar cabos de potência/controle, terminações, identificação e aperto dos bornes.": "ELE-SC-02"
+ },
+ "ELE-SS": {
+  "Conferir os bornes (+/−) indicados na RTS e o tipo de contato (NA/NF) contra a lógica.": "ELE-SS-03",
+  "Medir a alimentação do sensor, quando for sensor alimentado (não contato seco).": "ELE-SS-04",
+  "Testar continuidade e isolamento do cabo.": "ELE-SS-02",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (chave e borneira XED do painel remoto).": "ELE-SS-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-SS-05"
+ },
+ "ELE-TCV": {
+  "Conferir polaridade (+/−) nos bornes indicados na RTS e no posicionador.": "ELE-TCV-04",
+  "Testar continuidade e isolamento do cabo de sinal 4–20 mA.": "ELE-TCV-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel).": "ELE-TCV-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (posicionador e borneira do painel remoto).": "ELE-TCV-01",
+  "Verificar vedação do invólucro do posicionador e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-TCV-05"
+ },
+ "ELE-TI": {
+  "Confirmar em campo que o instrumento é de indicação local, sem ligação elétrica prevista no P&ID e sem cabo instalado; registrar a verificação como concluída na folha de Elétrica.": "ELE-TI-01"
+ },
+ "ELE-TT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-TT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-TT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-TT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-TT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-TT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-TT-06"
+ },
+ "ELE-WIT": {
+  "Conferir polaridade (+/−) nos bornes da borneira XEA indicados na RTS.": "ELE-WIT-04",
+  "Medir a tensão de alimentação do laço no instrumento e comparar com a faixa do fabricante.": "ELE-WIT-05",
+  "Testar continuidade e isolamento do cabo de sinal.": "ELE-WIT-02",
+  "Verificar blindagem aterrada em um único ponto (lado painel) e isolada no lado campo.": "ELE-WIT-03",
+  "Verificar identificação do cabo e das anilhas nas duas pontas (instrumento e borneira do painel remoto indicado na RTS).": "ELE-WIT-01",
+  "Verificar vedação do invólucro e prensa-cabos; em área classificada pelo estudo de classificação de áreas da planta, conferir a certificação Ex do instrumento.": "ELE-WIT-06"
+ },
+ "ELE-XV": {
+  "Conferir os bornes da saída digital (SD) da solenoide, indicados na RTS.": "ELE-XV-04",
+  "Medir a resistência da bobina da solenoide e conferir a tensão nominal da bobina contra a tensão da saída digital do painel.": "ELE-XV-03",
+  "Testar continuidade e isolamento dos cabos da solenoide e dos fins de curso.": "ELE-XV-02",
+  "Verificar identificação dos cabos da solenoide e das chaves de fim de curso nas duas pontas.": "ELE-XV-01",
+  "Verificar vedação dos invólucros (solenoide e caixa de fins de curso) e prensa-cabos; em área classificada, conferir certificação Ex.": "ELE-XV-05"
+ },
+ "INS-ACV": {
+  "Conferir tag, diâmetro e sentido de fluxo do corpo contra o P&ID.": "INS-ACV-01",
+  "Curso completo sem travamento; registrar tempos de abertura e fechamento.": "INS-ACV-06",
+  "RTS-SA: comandar 0 %, 50 % e 100 % pelo supervisório, medir o sinal nos bornes com medidor calibrado e confirmar a posição correspondente da válvula em campo.": "INS-ACV-04",
+  "RTS-SA: faixa, descrição, endereço e histórico corretos no supervisório.": "INS-ACV-05",
+  "Teste funcional da malha em manual e automático com o controlador associado no supervisório (sem sintonia fina, que fica para a partida).": "INS-ACV-07",
+  "Verificar a posição de falha (falta de ar e falta de sinal) contra a folha de dados.": "INS-ACV-03",
+  "Verificar suprimento de ar de instrumentação ao posicionador (filtro-regulador ajustado à pressão da folha de dados).": "INS-ACV-02"
+ },
+ "INS-AIT": {
+  "Calibrar o sensor conforme a variável medida: pH (AIT-20001, 30003, 30004) com soluções-tampão; condutividade (AIT-40001 a 40006) com solução-padrão; oxigênio (AIT-41421/42421/43421) e % etanol no CO₂ (AIT-30001) conforme procedimento do fabricante.": "INS-AIT-03",
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-AIT-01",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-AIT-08",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-AIT-09",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-AIT-05",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-AIT-06",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-AIT-10",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-AIT-07",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-AIT-02",
+  "Verificar montagem do sensor (porta-sensor, posição, eletrodo hidratado) e válvulas do skid de amostra/bypass quando existir.": "INS-AIT-04"
+ },
+ "INS-DIT": {
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-DIT-01",
+  "DIT-30001: mín./máx./unidade não estão preenchidos na RTS — obter a faixa na folha de dados antes do teste.": "INS-DIT-05",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-DIT-09",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-DIT-10",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-DIT-06",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-DIT-07",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-DIT-11",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-DIT-08",
+  "Verificar alinhamento das válvulas do skid do DIT-30001 (VBB-3090/3091, VES-3002/3003).": "INS-DIT-04",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-DIT-02",
+  "Verificar com água limpa a leitura de referência (0 °Brix para DIT-20001/20002; 0 % etanol para DIT-30001) e registrar o desvio.": "INS-DIT-03"
+ },
+ "INS-FCV": {
+  "Conferir tag, diâmetro e sentido de fluxo do corpo contra o P&ID.": "INS-FCV-01",
+  "Curso completo sem travamento; registrar tempos de abertura e fechamento.": "INS-FCV-06",
+  "FCV-20007 é fisicamente o alimentador rotativo moega→pré-masher (acionado por motor), não uma válvula de controle contínuo: aplicar o teste de comando de velocidade/partida em vez do teste de curso.": "INS-FCV-08",
+  "RTS-SA: comandar 0 %, 50 % e 100 % pelo supervisório, medir o sinal nos bornes com medidor calibrado e confirmar a posição correspondente da válvula em campo.": "INS-FCV-04",
+  "RTS-SA: faixa, descrição, endereço e histórico corretos no supervisório.": "INS-FCV-05",
+  "Teste funcional da malha em manual e automático com o controlador associado no supervisório (sem sintonia fina, que fica para a partida).": "INS-FCV-07",
+  "Verificar a posição de falha (falta de ar e falta de sinal) contra a folha de dados.": "INS-FCV-03",
+  "Verificar suprimento de ar de instrumentação ao posicionador (filtro-regulador ajustado à pressão da folha de dados).": "INS-FCV-02"
+ },
+ "INS-FIT": {
+  "Com a linha cheia e sem fluxo, verificar/ajustar o zero conforme o fabricante.": "INS-FIT-04",
+  "Conferir seta de fluxo, trechos retos a montante e jusante, e aterramento/anéis de aterramento conforme a tecnologia do medidor.": "INS-FIT-03",
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-FIT-01",
+  "Na primeira circulação com água, confirmar sinal coerente e sentido positivo da vazão no supervisório.": "INS-FIT-05",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-FIT-09",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-FIT-10",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-FIT-06",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-FIT-07",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-FIT-11",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-FIT-08",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-FIT-02"
+ },
+ "INS-FSL": {
+  "Com a bomba de lubrificação operando, interromper o fluxo de forma controlada e confirmar a atuação.": "INS-FSL-02",
+  "Confirmar o intertravamento de partida/operação do secador por baixa vazão de lubrificação.": "INS-FSL-07",
+  "RTS-ED: histórico registrando.": "INS-FSL-06",
+  "RTS-ED: indicação no supervisório de acordo com a função do dispositivo.": "INS-FSL-03",
+  "RTS-ED: status inferior e status superior aprovados, atuando o dispositivo em campo.": "INS-FSL-04",
+  "RTS-ED: status superior e inferior aprovados na tela, com cores correspondentes ao status do dispositivo.": "INS-FSL-05",
+  "Verificar montagem da chave na linha de lubrificação do mancal (acoplado e não acoplado) de cada secador.": "INS-FSL-01"
+ },
+ "INS-KSC": {
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-KSC-01",
+  "KSC-41312/42312/43312: mín./máx./unidade não estão preenchidos na RTS — obter faixa na folha de dados antes do teste.": "INS-KSC-04",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-KSC-08",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-KSC-09",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-KSC-05",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-KSC-06",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-KSC-10",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-KSC-07",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-KSC-02",
+  "Verificar tomada de pressão e bloqueio no skid R-1150 do respectivo secador.": "INS-KSC-03"
+ },
+ "INS-LCV": {
+  "Conferir tag, diâmetro e sentido de fluxo do corpo contra o P&ID.": "INS-LCV-01",
+  "Curso completo sem travamento; registrar tempos de abertura e fechamento.": "INS-LCV-06",
+  "RTS-SA: comandar 0 %, 50 % e 100 % pelo supervisório, medir o sinal nos bornes com medidor calibrado e confirmar a posição correspondente da válvula em campo.": "INS-LCV-04",
+  "RTS-SA: faixa, descrição, endereço e histórico corretos no supervisório.": "INS-LCV-05",
+  "Teste funcional da malha em manual e automático com o controlador associado no supervisório (sem sintonia fina, que fica para a partida).": "INS-LCV-07",
+  "Verificar a posição de falha (falta de ar e falta de sinal) contra a folha de dados.": "INS-LCV-03",
+  "Verificar suprimento de ar de instrumentação ao posicionador (filtro-regulador ajustado à pressão da folha de dados).": "INS-LCV-02"
+ },
+ "INS-LIT": {
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-LIT-01",
+  "Confirmar alarmes de nível configurados no supervisório conforme a definição do projeto.": "INS-LIT-05",
+  "No enchimento do tanque com água, comparar a indicação com o nível real medido em pelo menos dois pontos.": "INS-LIT-04",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-LIT-09",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-LIT-10",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-LIT-06",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-LIT-07",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-LIT-11",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-LIT-08",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-LIT-02",
+  "Verificar montagem conforme tecnologia (bocal, antena ou diafragma) e configuração da altura de referência do tanque.": "INS-LIT-03"
+ },
+ "INS-LS": {
+  "Atuar a chave fisicamente (cobertura/imersão do elemento) e confirmar a mudança de estado.": "INS-LS-02",
+  "Confirmar o intertravamento associado (ex.: parada do elevador de caneca por embuchamento).": "INS-LS-07",
+  "RTS-ED: histórico registrando.": "INS-LS-06",
+  "RTS-ED: indicação no supervisório de acordo com a função do dispositivo.": "INS-LS-03",
+  "RTS-ED: status inferior e status superior aprovados, atuando o dispositivo em campo.": "INS-LS-04",
+  "RTS-ED: status superior e inferior aprovados na tela, com cores correspondentes ao status do dispositivo.": "INS-LS-05",
+  "Verificar montagem e posição da chave conforme o P&ID (LS-40033 embuchamento do elevador de caneca; LS-41221/42221/43221 linha de condensado dos secadores).": "INS-LS-01"
+ },
+ "INS-LSH": {
+  "Atuar a chave no enchimento com água (ou por imersão controlada) e confirmar a mudança de estado.": "INS-LSH-02",
+  "Confirmar o alarme/intertravamento de nível alto associado.": "INS-LSH-07",
+  "RTS-ED: histórico registrando.": "INS-LSH-06",
+  "RTS-ED: indicação no supervisório de acordo com a função do dispositivo.": "INS-LSH-03",
+  "RTS-ED: status inferior e status superior aprovados, atuando o dispositivo em campo.": "INS-LSH-04",
+  "RTS-ED: status superior e inferior aprovados na tela, com cores correspondentes ao status do dispositivo.": "INS-LSH-05",
+  "Verificar montagem e altura de instalação contra o P&ID.": "INS-LSH-01"
+ },
+ "INS-LSL": {
+  "Atuar a chave no esvaziamento com água (ou por remoção controlada do meio) e confirmar a mudança de estado.": "INS-LSL-02",
+  "Confirmar o intertravamento de nível baixo associado (ex.: proteção de bomba contra operação a seco).": "INS-LSL-07",
+  "RTS-ED: histórico registrando.": "INS-LSL-06",
+  "RTS-ED: indicação no supervisório de acordo com a função do dispositivo.": "INS-LSL-03",
+  "RTS-ED: status inferior e status superior aprovados, atuando o dispositivo em campo.": "INS-LSL-04",
+  "RTS-ED: status superior e inferior aprovados na tela, com cores correspondentes ao status do dispositivo.": "INS-LSL-05",
+  "Verificar montagem e altura de instalação contra o P&ID.": "INS-LSL-01"
+ },
+ "INS-PCV": {
+  "Conferir tag, diâmetro e sentido de fluxo do corpo contra o P&ID.": "INS-PCV-01",
+  "Curso completo sem travamento; registrar tempos de abertura e fechamento.": "INS-PCV-06",
+  "PCV-40011/40021/40031 aparecem na RTS como entrada analógica (EA), com a descrição \"sinal analógico 4–20 mA para válvula\" — confirmar se o ponto é comando ou retorno de posição antes do teste.": "INS-PCV-08",
+  "RTS-SA: comandar 0 %, 50 % e 100 % pelo supervisório, medir o sinal nos bornes com medidor calibrado e confirmar a posição correspondente da válvula em campo.": "INS-PCV-04",
+  "RTS-SA: faixa, descrição, endereço e histórico corretos no supervisório.": "INS-PCV-05",
+  "Teste funcional da malha em manual e automático com o controlador associado no supervisório (sem sintonia fina, que fica para a partida).": "INS-PCV-07",
+  "Verificar a posição de falha (falta de ar e falta de sinal) contra a folha de dados.": "INS-PCV-03",
+  "Verificar suprimento de ar de instrumentação ao posicionador (filtro-regulador ajustado à pressão da folha de dados).": "INS-PCV-02"
+ },
+ "INS-PDIT": {
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-PDIT-01",
+  "Confirmar que as tomadas de alta e de baixa pressão do filtro de mangas não estão invertidas e estão desobstruídas.": "INS-PDIT-03",
+  "PDIT-41421/42421/43421: mín./máx./unidade não estão preenchidos na RTS — obter faixa na folha de dados antes do teste.": "INS-PDIT-04",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-PDIT-08",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-PDIT-09",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-PDIT-05",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-PDIT-06",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-PDIT-10",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-PDIT-07",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-PDIT-02"
+ },
+ "INS-PI": {
+  "Conferir faixa do manômetro compatível com a pressão de operação e certificado de calibração.": "INS-PI-01",
+  "Verificar ponteiro no zero com a linha despressurizada e leitura coerente no teste da bomba/linha.": "INS-PI-03",
+  "Verificar válvula de bloqueio/dreno e, em serviço de vapor, sifão instalado.": "INS-PI-02"
+ },
+ "INS-PIT": {
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-PIT-01",
+  "Na pressurização do sistema com água, comparar com o indicador local de pressão mais próximo (PI) onde existir.": "INS-PIT-04",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-PIT-09",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-PIT-10",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-PIT-06",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-PIT-07",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-PIT-11",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-PIT-08",
+  "Transmissores dos secadores (PIT-41212, 41221, 41311, 41451 e equivalentes 42xxx/43xxx): mín./máx./unidade não estão preenchidos na RTS — obter faixa na folha de dados antes do teste.": "INS-PIT-05",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-PIT-02",
+  "Verificar manifold/válvula de bloqueio e dreno, tomada de impulso e posição de montagem.": "INS-PIT-03"
+ },
+ "INS-PSLL": {
+  "Confirmar o intertravamento/alarme do secador associado à baixa pressão de ar.": "INS-PSLL-07",
+  "RTS-ED: histórico registrando.": "INS-PSLL-06",
+  "RTS-ED: indicação no supervisório de acordo com a função do dispositivo.": "INS-PSLL-03",
+  "RTS-ED: status inferior e status superior aprovados, atuando o dispositivo em campo.": "INS-PSLL-04",
+  "RTS-ED: status superior e inferior aprovados na tela, com cores correspondentes ao status do dispositivo.": "INS-PSLL-05",
+  "Reduzir a pressão do ar de instrumentação do secador de forma controlada e confirmar a atuação da chave.": "INS-PSLL-02",
+  "Verificar ajuste do ponto de atuação conforme folha de dados.": "INS-PSLL-01"
+ },
+ "INS-SS": {
+  "Com o transportador operando em vazio, confirmar o sinal de movimento; parar o transportador e confirmar a indicação de velocidade zero.": "INS-SS-02",
+  "Confirmar o intertravamento de velocidade zero (parada do transportador e dos equipamentos a montante).": "INS-SS-07",
+  "RTS-ED: histórico registrando.": "INS-SS-06",
+  "RTS-ED: indicação no supervisório de acordo com a função do dispositivo.": "INS-SS-03",
+  "RTS-ED: status inferior e status superior aprovados, atuando o dispositivo em campo.": "INS-SS-04",
+  "RTS-ED: status superior e inferior aprovados na tela, com cores correspondentes ao status do dispositivo.": "INS-SS-05",
+  "SS-40032 e SS-40035 acompanham a dúvida de acionamento de RED-4015/RED-4016 (consulta C-01).": "INS-SS-08",
+  "Verificar a distância sensor–alvo conforme fabricante e a fixação do suporte.": "INS-SS-01"
+ },
+ "INS-TCV": {
+  "Conferir tag, diâmetro e sentido de fluxo do corpo contra o P&ID.": "INS-TCV-01",
+  "Curso completo sem travamento; registrar tempos de abertura e fechamento.": "INS-TCV-06",
+  "RTS-SA: comandar 0 %, 50 % e 100 % pelo supervisório, medir o sinal nos bornes com medidor calibrado e confirmar a posição correspondente da válvula em campo.": "INS-TCV-04",
+  "RTS-SA: faixa, descrição, endereço e histórico corretos no supervisório.": "INS-TCV-05",
+  "Teste funcional da malha em manual e automático com o controlador associado no supervisório (sem sintonia fina, que fica para a partida).": "INS-TCV-07",
+  "Verificar a posição de falha (falta de ar e falta de sinal) contra a folha de dados.": "INS-TCV-03",
+  "Verificar suprimento de ar de instrumentação ao posicionador (filtro-regulador ajustado à pressão da folha de dados).": "INS-TCV-02"
+ },
+ "INS-TI": {
+  "Comparar com o transmissor de temperatura (TT) do mesmo ponto no primeiro aquecimento/circulação, onde existir.": "INS-TI-03",
+  "Conferir faixa compatível com a temperatura de operação e certificado de calibração.": "INS-TI-01",
+  "Verificar montagem em poço termométrico e legibilidade a partir do ponto de operação.": "INS-TI-02"
+ },
+ "INS-TT": {
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-TT-01",
+  "Onde houver indicador local (TI) no mesmo ponto, comparar as leituras no primeiro aquecimento/circulação.": "INS-TT-04",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-TT-09",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-TT-10",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-TT-06",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-TT-07",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-TT-11",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-TT-08",
+  "Transmissores de mancal (TT-4xxxxA/B/C/D dos redler e do elevador de caneca): confirmar a correspondência lado A/B/C/D com o mancal físico.": "INS-TT-05",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-TT-02",
+  "Verificar o elemento sensor (tipo conforme folha de dados) e o poço termométrico; testar por comparação com padrão ou por simulação do sensor.": "INS-TT-03"
+ },
+ "INS-WIT": {
+  "Conferir tag, faixa calibrada e unidade configuradas no transmissor contra a folha de dados e a RTS.": "INS-WIT-01",
+  "Confirmar o intertravamento de trip (WSH) sobre o motor do agitador no teste com água.": "INS-WIT-10",
+  "RTS-EA: comunicação HART aprovada com o sistema de gerenciamento de ativos (quando aplicado no projeto).": "INS-WIT-06",
+  "RTS-EA: descrição na tela, endereço e tempo de resposta corretos.": "INS-WIT-07",
+  "RTS-EA: entrada do cartão/painel selecionada corretamente para transmissor a 2 ou 4 fios.": "INS-WIT-03",
+  "RTS-EA: faixa no supervisório de acordo com a unidade de engenharia (mín./máx./unidade da RTS).": "INS-WIT-04",
+  "RTS-EA: histórico da variável registrando (Chk Hist Good).": "INS-WIT-08",
+  "RTS-EA: simular 0 %, 50 % e 100 % da faixa (no borne ou pelo transmissor) e aprovar a indicação no supervisório nos três pontos.": "INS-WIT-05",
+  "Testar os pontos digitais WAH (torque elevado) e WSH (trip) de mesma numeração, que estão na aba \"Teste de ED e SD\" da RTS: status, cores e histórico no supervisório.": "INS-WIT-09",
+  "Verificar certificado de calibração válido (bancada ou in loco).": "INS-WIT-02",
+  "WIT-30004: a descrição RTS repete \"FERMENTADOR 03\" — confirmar no campo que o ponto é do agitador do fermentador 04 (consulta C-06).": "INS-WIT-11"
+ },
+ "INS-XV": {
+  "Ajustar os fins de curso de aberto e fechado.": "INS-XV-03",
+  "Conferir tag, diâmetro e sentido de montagem contra o P&ID.": "INS-XV-01",
+  "RTS-SD: comandar abrir/fechar pelo supervisório, medir o comando nos bornes e confirmar a atuação da válvula em campo.": "INS-XV-04",
+  "RTS: descrição, endereço e histórico corretos.": "INS-XV-06",
+  "Registrar os tempos de abertura e fechamento.": "INS-XV-05",
+  "Testar os permissivos e intertravamentos da lógica que envolvem a válvula (sequências de CIP, transferência e envio).": "INS-XV-07",
+  "Verificar suprimento de ar ao atuador e posição de falha (falta de ar/energia) contra a folha de dados.": "INS-XV-02"
+ },
+ "MEC-AGT": {
+  "Com o tanque cheio de água acima do nível mínimo de cobertura do impelidor indicado pelo fabricante, operar o agitador e verificar ruído, vibração e temperatura do redutor.": "MEC-AGT-04",
+  "Confirmar o sentido de rotação do impelidor na partida instantânea do motor (executada junto com a tarefa de sentido de rotação do Motor elétrico).": "MEC-AGT-03",
+  "Durante o teste com água, confirmar que o transmissor de torque associado (WIT de mesma numeração) responde no supervisório.": "MEC-AGT-05",
+  "Girar o eixo manualmente, com o motor bloqueado e etiquetado, e confirmar giro livre, sem interferência do impelidor com bicos, cabeçotes de limpeza ou demais internos do tanque.": "MEC-AGT-02",
+  "Registrar os parâmetros de referência do teste (corrente do motor e torque do WIT) para uso como linha de base da operação.": "MEC-AGT-07",
+  "Testar o permissivo de nível mínimo do tanque para liberar a partida do agitador, quando previsto na lógica: com nível abaixo do mínimo, confirmar que o agitador é bloqueado/parado.": "MEC-AGT-06",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-AGT-09",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-AGT-08",
+  "Verificar eixo, hélices/impelidores, folgas internas e interferência com acessórios do tanque.": "MEC-AGT-12",
+  "Verificar fixação do motorredutor e da estrutura de apoio no teto do tanque (torque de aperto conforme fabricante).": "MEC-AGT-01",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-AGT-10",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-AGT-11",
+  "Verificar vedação do eixo e fixação do conjunto no bocal/suporte do tanque.": "MEC-AGT-13"
+ },
+ "MEC-BBT": {
+  "Com o tanque com água, admitir vapor em baixa abertura pela válvula de controle de temperatura do tanque e verificar injeção sem golpe de aríete e sem retorno de líquido para o ramal de vapor.": "MEC-BBT-03",
+  "Confirmar a sopragem/limpeza do ramal de vapor até o bico antes da conexão final (registro de limpeza de linha).": "MEC-BBT-02",
+  "Confirmar que a válvula de retenção individual do ramal de cada bico (VRE-2010 a VRE-2021) está instalada com a seta no sentido do fluxo de vapor.": "MEC-BBT-01",
+  "Testar o permissivo de temperatura/pressão que libera a injeção de vapor, quando previsto na lógica da válvula de controle de temperatura associada.": "MEC-BBT-04",
+  "Verificar linha de vapor, válvulas, drenos, purgadores e isolamento térmico.": "MEC-BBT-06",
+  "Verificar posição, orientação e fixação dos bicos injetores conforme desenho.": "MEC-BBT-05"
+ },
+ "MEC-BCE": {
+  "Conferir placa de identificação (vazão e pressão) contra os dados da lista de equipamentos e do P&ID.": "MEC-BCE-01",
+  "Conferir válvulas de sucção/descarga, retenção, drenos, respiros e condição de escorva.": "MEC-BCE-15",
+  "Confirmar o alinhamento das válvulas de sucção e descarga dedicadas à bomba (VBB/VRE/PI de sucção e descarga) na posição de teste.": "MEC-BCE-03",
+  "Confirmar o sentido de rotação na partida instantânea do motor, com a bomba escorvada (nunca operar a seco).": "MEC-BCE-04",
+  "No desligamento, confirmar que a válvula de retenção da descarga fecha sem refluxo perceptível (rotação reversa do eixo).": "MEC-BCE-06",
+  "Operar com água em circuito de teste: verificar pressão de descarga no indicador local (PI) contra a curva/placa, ruído, vibração, temperatura de mancal e ausência de vazamento na vedação.": "MEC-BCE-05",
+  "Registrar os parâmetros de referência do teste (corrente do motor e pressão de descarga) para uso como linha de base da operação.": "MEC-BCE-08",
+  "Testar, quando existente, a proteção/permissivo contra funcionamento a seco associado à bomba (chave de nível baixo ou sinal de vazão do tanque de sucção): confirmar que a partida é bloqueada ou a bomba é parada na condição de proteção.": "MEC-BCE-07",
+  "Verificar a vedação (selo mecânico ou gaxeta) e, onde o P&ID prevê água de selo (tanques de água para selo TNQ-3015, TNQ-4008 e TNQ-7007), confirmar a alimentação de água de selo alinhada antes de qualquer partida.": "MEC-BCE-02",
+  "Verificar alinhamento bomba-motor após conexão definitiva das tubulações.": "MEC-BCE-13",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-BCE-10",
+  "Verificar ausência de esforços de tubulação nos bocais de sucção e descarga.": "MEC-BCE-14",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-BCE-09",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-BCE-11",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-BCE-12",
+  "Verificar selo mecânico/gaxeta e sistema auxiliar de selo/flush, quando aplicável.": "MEC-BCE-16"
+ },
+ "MEC-BDO": {
+  "Conferir em campo a filiação motor → corpo antes do teste: BDO-7001A = SC-70024, BDO-7001B = SC-70025, BDO-7002A = SC-70001, BDO-7002B = SC-70004. Atenção: SC-70001 tem descrição RTS \"dosadora de soda\", mas aciona a dosadora de dispersante.": "MEC-BDO-05",
+  "Confirmar ausência de vazamento no cabeçote e nas conexões durante o teste.": "MEC-BDO-04",
+  "Teste de vazão com água: coletar volume em tempo cronometrado em pelo menos dois ajustes de curso e comparar com a faixa da bolha de dados do P&ID (ex.: BDO-7001A/B, Q = 0,2–1,0 m³/h; P = 60 mca).": "MEC-BDO-03",
+  "Verificar contenção/drenagem e condições para manuseio seguro do produto químico, quando aplicável.": "MEC-BDO-07",
+  "Verificar skid/tubulações, mangueiras, válvulas, conexões e compatibilidade dos materiais com o produto.": "MEC-BDO-06",
+  "Verificar válvulas de sucção e descarga, filtro de sucção e manômetro da descarga (quando instalado) do skid de dosagem.": "MEC-BDO-02",
+  "Verificar óleo do cárter/acionamento e integridade do diafragma conforme fabricante.": "MEC-BDO-01"
+ },
+ "MEC-BDP": {
+  "Antes do teste, confirmar com o projetista a filiação da BDP-3001 e das XV-30145 a XV-30148 (divergência entre texto-base e parêntese da descrição RTS, consulta C-07).": "MEC-BDP-07",
+  "Conferir o tipo construtivo e os dados de placa da BDP-3001 contra a folha de dados do fabricante.": "MEC-BDP-01",
+  "Conferir válvulas de sucção/descarga, retenção, drenos, respiros e condição de escorva.": "MEC-BDP-14",
+  "Confirmar o sentido de rotação na partida instantânea do motor SC-30031.": "MEC-BDP-04",
+  "Confirmar que as válvulas de sucção e de descarga estão abertas antes de qualquer partida (bomba de deslocamento positivo não pode partir contra descarga bloqueada).": "MEC-BDP-03",
+  "Operar com água: verificar pressão de descarga, ruído, vibração e ausência de vazamento na vedação.": "MEC-BDP-05",
+  "Registrar os parâmetros de referência do teste (corrente do motor e pressão de descarga) para uso como linha de base da operação.": "MEC-BDP-06",
+  "Verificar alinhamento bomba-motor após conexão definitiva das tubulações.": "MEC-BDP-12",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-BDP-09",
+  "Verificar ausência de esforços de tubulação nos bocais de sucção e descarga.": "MEC-BDP-13",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-BDP-08",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-BDP-10",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-BDP-11",
+  "Verificar se o fabricante/projeto prevê dispositivo de alívio de sobrepressão; se previsto, confirmar que está instalado e ajustado.": "MEC-BDP-02",
+  "Verificar selo mecânico/gaxeta e sistema auxiliar de selo/flush, quando aplicável.": "MEC-BDP-15"
+ },
+ "MEC-CHL": {
+  "Circular água nos circuitos do chiller verificando vazamentos, drenos e respiros, e leitura coerente dos indicadores locais (PI/TI).": "MEC-CHL-04",
+  "Confirmar alinhamento das válvulas do circuito de água gelada e do circuito de vapor alcoólico para o teste.": "MEC-CHL-03",
+  "Confirmar que a válvula de segurança do domo/ramal de alívio (PSV-40001/40002/40003) está instalada, lacrada e com certificado de ajuste.": "MEC-CHL-02",
+  "Confirmar teste de estanqueidade/vácuo e carga de refrigerante conforme fabricante.": "MEC-CHL-08",
+  "Executar o checklist de pré-partida do fornecedor do chiller.": "MEC-CHL-01",
+  "Os componentes do trem de alívio sem tag no desenho (globo, CAP, retenção — consulta C-14) devem ser identificados em campo antes do teste.": "MEC-CHL-06",
+  "Testar as proteções de alta/baixa pressão, anticongelamento e fluxo do circuito de água gelada, conforme sequência automática do fabricante.": "MEC-CHL-05",
+  "Verificar circuito de água gelada: limpeza, filtros, válvulas, drenos, respiros e isolamento.": "MEC-CHL-09",
+  "Verificar montagem, suportes, compressores, condensador/evaporador, válvulas e tubulações do circuito.": "MEC-CHL-07"
+ },
+ "MEC-CLT": {
+  "Com água pela linha de CIP, abrindo a válvula de entrada do cabeçote pelo supervisório, verificar rotação e padrão de jato cobrindo teto, costado e fundo (inspeção pela boca de visita, com o tanque liberado).": "MEC-CLT-03",
+  "Confirmar limpeza/desobstrução da linha, bicos e conexões do sistema CIP.": "MEC-CLT-06",
+  "Testar a sequência de CIP e os permissivos/intertravamentos das válvulas e bombas associadas, impedindo combinações indevidas.": "MEC-CLT-04",
+  "Verificar estanqueidade das conexões durante circulação de água/CIP.": "MEC-CLT-07",
+  "Verificar giro livre do cabeçote (quando rotativo) e desobstrução dos orifícios de jato.": "MEC-CLT-01",
+  "Verificar montagem, orientação, fixação e livre rotação do cabeçote.": "MEC-CLT-05",
+  "Verificar pressão/vazão de alimentação do cabeçote conforme requisito do fabricante (faixa mínima para garantir rotação e cobertura).": "MEC-CLT-02"
+ },
+ "MEC-DCT": {
+  "Confirmar o sentido de rotação e acompanhar a rampa de aceleração até a rotação nominal sem produto, verificando vibração, ruído e temperatura de mancal.": "MEC-DCT-06",
+  "Executar o checklist de pré-partida do fabricante com acompanhamento do representante técnico do fornecedor.": "MEC-DCT-01",
+  "Executar teste com processo (quando liberado) e registrar rotação, torque, vibração, temperaturas e qualidade de separação obtida.": "MEC-DCT-07",
+  "Girar o rotor manualmente e confirmar giro livre; verificar tampas e proteções fechadas e intertravadas.": "MEC-DCT-05",
+  "Testar a sequência automática de partida/parada, lubrificação e flushing do fabricante, e os trips por sobrevelocidade, vibração e sobrecarga/torque.": "MEC-DCT-08",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-DCT-11",
+  "Verificar as válvulas e conexões do cone de saída; 4 válvulas do cone não têm tag no desenho (consulta C-14) — identificar em campo antes do teste.": "MEC-DCT-09",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-DCT-10",
+  "Verificar fixação da base, chumbadores, nivelamento, estado dos amortecedores e liberação dos travamentos de transporte.": "MEC-DCT-03",
+  "Verificar linhas de alimentação, descarga de líquido/sólidos, lavagem e utilidades.": "MEC-DCT-15",
+  "Verificar lubrificação dos mancais e da caixa de engrenagens conforme fabricante.": "MEC-DCT-02",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-DCT-12",
+  "Verificar montagem do bowl/rotor, rosca interna e componentes internos conforme manual do fabricante, com folgas e torques ajustados.": "MEC-DCT-04",
+  "Verificar montagem do bowl/rotor, rosca interna, redutor/backdrive e componentes conforme manual do fabricante.": "MEC-DCT-14",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-DCT-13"
+ },
+ "MEC-ECA": {
+  "Confirmar sentido de rotação na partida instantânea do motor SC-40033 e operar em vazio, verificando desvio da correia, ruído e vibração.": "MEC-ECA-04",
+  "Em operação em vazio, confirmar resposta do sensor de velocidade zero SS-40033 e dos transmissores de temperatura de mancal TT-40033A/B/C/D no supervisório.": "MEC-ECA-05",
+  "Registrar os parâmetros de referência do teste (corrente do motor) para uso como linha de base da operação.": "MEC-ECA-07",
+  "Testar o intertravamento do elevador com a alimentação e a descarga (equipamentos a montante/jusante), bloqueando a alimentação quando o elevador ou o destino estiver indisponível.": "MEC-ECA-06",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-ECA-09",
+  "Verificar alinhamento vertical da carcaça, correia/corrente, canecas e emendas.": "MEC-ECA-12",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-ECA-08",
+  "Verificar janelas de inspeção e portas fechadas e proteções instaladas.": "MEC-ECA-03",
+  "Verificar lubrificação do redutor e dos mancais da cabeça e do pé.": "MEC-ECA-02",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-ECA-10",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-ECA-11",
+  "Verificar tensão da correia/corrente, polias/rodas e dispositivo anti-retorno.": "MEC-ECA-13",
+  "Verificar tensão e alinhamento da correia/corrente, fixação das canecas e ajuste do esticador no pé.": "MEC-ECA-01"
+ },
+ "MEC-FAL": {
+  "Com água em circulação, acionar o ciclo de autolimpeza e verificar a sequência do fabricante (acionamento, abertura do dreno, retorno ao normal).": "MEC-FAL-03",
+  "Confirmar que o FAL-3001 tem registro próprio na aba CCM da RTS e se o acionamento é único; o CCM não individualiza corpo e acionamento (consulta C-10).": "MEC-FAL-04",
+  "Operar manualmente as válvulas de bloqueio, bypass e dreno ligadas ao corpo (VBB-3047, VBB-3048, VBB-3049, VBB-3076, VBB-3077 e VES-3001) e deixá-las na posição de teste.": "MEC-FAL-01",
+  "Verificar a medição/alarme de pressão diferencial do filtro, quando existente, e conhecer o ΔP de referência para elemento limpo.": "MEC-FAL-02",
+  "Verificar corpo, elementos filtrantes, juntas, tampas e sentido de fluxo.": "MEC-FAL-05",
+  "Verificar válvulas de entrada/saída, drenos, respiros e linha de limpeza/backwash, quando aplicável.": "MEC-FAL-06"
+ },
+ "MEC-FLY": {
+  "Antes da primeira circulação, abrir a tampa, retirar e limpar a tela (resíduos de montagem) e conferir a malha da tela contra a especificação da linha.": "MEC-FLY-02",
+  "Após o flushing/primeira circulação com água, abrir e limpar a tela novamente e registrar o que foi retido.": "MEC-FLY-03",
+  "Conferir a posição dos filtros Y no desenho: FLY-3001/3002 no cabeçalho de água de selo do TNQ-3015 (área 300), FLY-4001/4002 no header de água de selo da BCE-4008 (área 400) e FLY-7001 na BCE-7007 (área 700).": "MEC-FLY-01",
+  "Verificar corpo, elementos filtrantes, juntas, tampas e sentido de fluxo.": "MEC-FLY-04",
+  "Verificar válvulas de entrada/saída, drenos, respiros e linha de limpeza/backwash, quando aplicável.": "MEC-FLY-05"
+ },
+ "MEC-IBC": {
+  "Confirmar identificação do produto no IBC e na linha de dosagem.": "MEC-IBC-03",
+  "Verificar a conexão da saída do IBC ao sistema de dosagem (IBC-7001 alfa-amilase; IBC-7002 gluco-amilase) e testar a estanqueidade com água antes do produto.": "MEC-IBC-02",
+  "Verificar posicionamento do IBC na base/berço e acesso para troca.": "MEC-IBC-01"
+ },
+ "MEC-MIS": {
+  "Confirmar sentido de rotação e operar em vazio verificando ruído, vibração e temperatura de mancais.": "MEC-MIS-01",
+  "Durante a operação em vazio, confirmar resposta do transmissor de torque WIT-40001 no supervisório.": "MEC-MIS-02",
+  "Registrar os parâmetros de referência do teste (corrente do motor e torque do WIT) para uso como linha de base da operação.": "MEC-MIS-04",
+  "Testar a sequência de alimentação de ingredientes e os permissivos de processo, quando aplicável.": "MEC-MIS-03",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-MIS-06",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-MIS-05",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-MIS-07",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-MIS-08",
+  "Verificar pás/elementos misturadores, eixo, folgas internas e condição da carcaça.": "MEC-MIS-09",
+  "Verificar vedações, tampas, bocais de alimentação/descarga e limpeza interna.": "MEC-MIS-10"
+ },
+ "MEC-MOE": {
+  "Conferir montagem e identificação de bocais, drenos, respiros, extravasor e conexões de processo.": "MEC-MOE-09",
+  "Confirmar execução e aprovação de teste de estanqueidade/hidrostático quando aplicável.": "MEC-MOE-11",
+  "Inspecionar costado, fundo/tampo, soldas, bocais, flanges, manways e revestimentos.": "MEC-MOE-07",
+  "Inspecionar interior da moega limpo, sem resíduos de montagem, e grelha/tampa instalada.": "MEC-MOE-01",
+  "MOE-2001: verificar a descarga livre para a válvula rotativa de alimentação do pré-masher (FCV-20007).": "MEC-MOE-04",
+  "MOE-2001: verificar fixação dos martelos pneumáticos XM-20001/20002 e das chaves de nível LSH/LSL-20001.": "MEC-MOE-03",
+  "MOE-7001: verificar condição da entrada manual de ureia e da interligação com o tanque de ureia.": "MEC-MOE-05",
+  "Testar os alarmes/intertravamentos de nível alto e baixo da moega (LSH/LSL-20001), quando previstos.": "MEC-MOE-06",
+  "Verificar aterramento/equipotencialização do tanque/silo e continuidade das ligações.": "MEC-MOE-02",
+  "Verificar chumbadores, suportes, nivelamento/prumo e condição da base.": "MEC-MOE-08",
+  "Verificar limpeza interna e ausência de materiais estranhos antes do fechamento.": "MEC-MOE-10"
+ },
+ "MEC-PRM": {
+  "Confirmar sentido de rotação e operar em vazio verificando ruído e vibração.": "MEC-PRM-02",
+  "Identificar em campo o acionamento do agitador: nenhum tag de motor foi localizado no desenho para ele (consulta C-14). Sem essa identificação, o teste de rotação não pode ser registrado por tag.": "MEC-PRM-01",
+  "Testar a sequência de alimentação (moega → válvula rotativa → pré-masher) e os permissivos de processo associados.": "MEC-PRM-03",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-PRM-05",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-PRM-04",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-PRM-06",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-PRM-07",
+  "Verificar pás/elementos misturadores, eixo, folgas internas e condição da carcaça.": "MEC-PRM-08",
+  "Verificar vedações, tampas, bocais de alimentação/descarga e limpeza interna.": "MEC-PRM-09"
+ },
+ "MEC-PSV": {
+  "Conferir certificado de calibração com pressão de ajuste (set pressure) e capacidade iguais aos da folha de dados.": "MEC-PSV-01",
+  "Confirmar TAG, diâmetro, classe, material, sentido e posição de instalação da PSV.": "MEC-PSV-06",
+  "Confirmar que válvulas de bloqueio associadas estão na posição operacional correta e controladas contra fechamento indevido.": "MEC-PSV-08",
+  "Se houver válvula de bloqueio a montante ou a jusante da PSV, confirmar que está travada aberta (caminho de alívio desimpedido).": "MEC-PSV-04",
+  "Validar a documentação do teste de bancada e da reinstalação pós-calibração, liberando a PSV para operação com lacre íntegro e registro rastreável.": "MEC-PSV-05",
+  "Verificar a tubulação de entrada e descarga, suportação e ausência de esforços sobre o corpo da válvula, com a descarga direcionada para local seguro, sem obstrução e com dreno de corpo livre.": "MEC-PSV-03",
+  "Verificar lacre intacto e plaqueta de ajuste presente.": "MEC-PSV-02",
+  "Verificar tubulação de entrada/descarga, suportação e ausência de esforços sobre a válvula.": "MEC-PSV-07"
+ },
+ "MEC-R1150": {
+  "Os instrumentos e válvulas do skid (FIT-4x311/4x312, KSC-4x312, XV-4x312/4x313/4x314, XV-40077/78/79) seguem as seções de Instrumentação e Elétrica pelo seu tipo.": "MEC-R1150-03",
+  "Verificar completude do skid R-1150-01A/B/C contra a documentação do fornecedor (Vettertec) e interligações com a planta.": "MEC-R1150-01",
+  "Verificar estanqueidade das conexões de CO₂ do skid com o teste do fornecedor.": "MEC-R1150-02"
+ },
+ "MEC-RED": {
+  "Confirmar sentido de rotação na partida instantânea e operar em vazio, verificando ruído, vibração e arraste da corrente.": "MEC-RED-03",
+  "Em operação em vazio, confirmar resposta do sensor de velocidade zero (SS) e dos 4 transmissores de temperatura de mancal (TT) do transportador no supervisório.": "MEC-RED-04",
+  "RED-4015 e RED-4016: antes do teste, confirmar qual motor aciona cada corpo — as bolhas do P&ID e as descrições do RTS estão invertidas entre SC-40032 e SC-40035 (consulta C-01).": "MEC-RED-07",
+  "Registrar os parâmetros de referência do teste (corrente do motor) para uso como linha de base da operação.": "MEC-RED-06",
+  "Testar a sequência de partida/parada com os equipamentos a montante e a jusante (bloqueio por falha do transportador seguinte).": "MEC-RED-05",
+  "Verificar alinhamento da caixa, corrente, rodas dentadas, raspadores e tensão do conjunto.": "MEC-RED-12",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-RED-09",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-RED-08",
+  "Verificar chutes de entrada/saída, tampas de inspeção e ausência de objetos no interior.": "MEC-RED-13",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-RED-10",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-RED-11",
+  "Verificar tampas e janelas de inspeção fechadas e proteções instaladas.": "MEC-RED-02",
+  "Verificar tensão da corrente, fixação das taliscas e ajuste do esticador.": "MEC-RED-01"
+ },
+ "MEC-RGN": {
+  "Circular água pelos dois lados e verificar vazamentos externos e ausência de passagem entre os lados.": "MEC-RGN-03",
+  "Conferir sentido/circuitos de entrada e saída, drenos, respiros e bypass conforme P&ID.": "MEC-RGN-06",
+  "Confirmar alinhamento das válvulas de entrada e saída dos dois lados, drenos e respiros.": "MEC-RGN-02",
+  "Confirmar limpeza interna, ausência de tampões de transporte e condição de juntas/vedações.": "MEC-RGN-05",
+  "Confirmar teste de pressão/estanqueidade dos dois circuitos, quando aplicável.": "MEC-RGN-07",
+  "Verificar a cota de aperto do pacote de placas contra a placa do fabricante.": "MEC-RGN-01",
+  "Verificar suportes, alinhamento, aperto de flanges/placas e ausência de esforços de tubulação.": "MEC-RGN-04"
+ },
+ "MEC-SCD": {
+  "Executar o aquecimento gradual do secador com o fabricante e, quando liberado o produto, registrar temperaturas, corrente e umidade de saída como referência do teste.": "MEC-SCD-08",
+  "Executar o checklist de pré-partida do fornecedor do secador com o representante técnico.": "MEC-SCD-01",
+  "Operar em vazio cada acionamento na sequência do fabricante e confirmar ruído, vibração e temperatura de mancal.": "MEC-SCD-06",
+  "Testar a sequência de partida/parada do secador, os permissivos de ventilação/transportes associados e a proteção de alta temperatura.": "MEC-SCD-07",
+  "Verificar a posição das válvulas manuais de CO₂, de combate a incêndio e de extinção na condição de partida.": "MEC-SCD-04",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-SCD-10",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-SCD-09",
+  "Verificar dutos de vapor/ar/gases, drenos, purgadores, exaustão e isolamento térmico.": "MEC-SCD-14",
+  "Verificar enchimento e circulação do sistema de lubrificação dos mancais (bomba de lubrificação SC-41321/42321/43321 e chaves de baixa vazão FSL).": "MEC-SCD-02",
+  "Verificar giro livre dos acionamentos internos (misturador de duplo eixo, roscas, válvula rotativa, exaustor) antes da primeira partida.": "MEC-SCD-05",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-SCD-11",
+  "Verificar mangas instaladas no filtro de mangas e tomadas de pressão diferencial (PDIT) desobstruídas.": "MEC-SCD-03",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-SCD-12",
+  "Verificar tambor/câmara, internos, vedações, suportes, roletes e sistema de acionamento.": "MEC-SCD-13"
+ },
+ "MEC-SCT": {
+  "Confirmar o alinhamento das válvulas de alimentação, água e descarga para o tanque volante (TNQ-3014).": "MEC-SCT-06",
+  "Confirmar sentido de rotação e acompanhar a aceleração até a rotação nominal sem produto, com vibração e temperatura de mancal dentro dos limites do fabricante.": "MEC-SCT-05",
+  "Executar o checklist de pré-partida do fabricante com acompanhamento do representante técnico do fornecedor.": "MEC-SCT-01",
+  "Executar teste com processo (quando liberado) e registrar rotação, torque, vibração, temperaturas e qualidade de separação obtida.": "MEC-SCT-07",
+  "Girar o rotor manualmente, confirmar giro livre e proteções fechadas e intertravadas.": "MEC-SCT-04",
+  "Testar a sequência automática de partida/parada, lubrificação e flushing do fabricante, e os trips por sobrevelocidade, vibração e sobrecarga/torque.": "MEC-SCT-08",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-SCT-10",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-SCT-09",
+  "Verificar linhas de alimentação, descarga de líquido/sólidos, lavagem e utilidades.": "MEC-SCT-14",
+  "Verificar lubrificação, fixação da base, chumbadores, nivelamento, amortecedores e liberação dos travamentos de transporte.": "MEC-SCT-02",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-SCT-11",
+  "Verificar montagem do bowl/rotor, rosca interna e componentes internos conforme manual do fabricante, com folgas e torques ajustados.": "MEC-SCT-03",
+  "Verificar montagem do bowl/rotor, rosca interna, redutor/backdrive e componentes conforme manual do fabricante.": "MEC-SCT-13",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-SCT-12"
+ },
+ "MEC-SPD": {
+  "Executar partida descarregada e elevar a carga gradualmente, registrando pressão/vácuo, corrente, temperatura e vibração como referência do teste.": "MEC-SPD-05",
+  "Identificar o acionamento de cada soprador: SPD-4001/4002/4003 entraram no P&ID na rev. 04 e não há motor individualizado a eles na lista.": "MEC-SPD-02",
+  "Operar com a linha de CO₂ alinhada (válvulas XV-40077/78/79) e verificar ruído, vibração e temperatura.": "MEC-SPD-04",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-SPD-07",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-SPD-06",
+  "Verificar filtro de sucção, silenciadores, válvula de retenção/alívio e tubulações.": "MEC-SPD-10",
+  "Verificar giro livre e confirmar sentido de rotação na partida instantânea.": "MEC-SPD-03",
+  "Verificar lubrificação, filtro de admissão e fixação do soprador conforme fabricante.": "MEC-SPD-01",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-SPD-08",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-SPD-09",
+  "Verificar óleo dos redutores/mancais e livre rotação do lóbulo.": "MEC-SPD-11"
+ },
+ "MEC-SPG": {
+  "Com vapor na linha, confirmar descarga intermitente de condensado, sem passagem contínua de vapor.": "MEC-SPG-03",
+  "Verificar filtro/tela de entrada limpo.": "MEC-SPG-02",
+  "Verificar instalação do SPG-2001 no fim do header de vapor, com seta no sentido do fluxo e descarga para o dreno.": "MEC-SPG-01"
+ },
+ "MEC-TCP": {
+  "Circular água pelos dois lados e verificar vazamentos externos e ausência de passagem entre os lados; para TCP-4001/4002/4003 (condensadores de vapor dos secadores), verificar também a drenagem do condensado.": "MEC-TCP-03",
+  "Conferir sentido/circuitos de entrada e saída, drenos, respiros e bypass conforme P&ID.": "MEC-TCP-06",
+  "Confirmar alinhamento das válvulas de entrada e saída dos dois lados, drenos e respiros.": "MEC-TCP-02",
+  "Confirmar limpeza interna, ausência de tampões de transporte e condição de juntas/vedações.": "MEC-TCP-05",
+  "Confirmar teste de pressão/estanqueidade dos dois circuitos, quando aplicável.": "MEC-TCP-07",
+  "Verificar a cota de aperto do pacote de placas (trocadores a placas) contra a placa do fabricante.": "MEC-TCP-01",
+  "Verificar suportes, alinhamento, aperto de flanges/placas e ausência de esforços de tubulação.": "MEC-TCP-04"
+ },
+ "MEC-TNQ": {
+  "Conferir montagem e identificação de bocais, drenos, respiros, extravasor e conexões de processo.": "MEC-TNQ-10",
+  "Confirmar execução e aprovação de teste de estanqueidade/hidrostático quando aplicável.": "MEC-TNQ-12",
+  "Durante o enchimento, conferir a indicação de nível (LIT) e a atuação das chaves de nível (LSH/LSL) associadas ao tanque, contra o nível real medido.": "MEC-TNQ-06",
+  "Encher com água e verificar ausência de vazamento em bocais, flanges e soldas.": "MEC-TNQ-05",
+  "Fechar bocas de visita com junta nova e aperto correto.": "MEC-TNQ-02",
+  "Inspecionar costado, fundo/tampo, soldas, bocais, flanges, manways e revestimentos.": "MEC-TNQ-08",
+  "Inspeção interna final antes do fechamento: limpo, sem resíduos de montagem, internos (agitador, bicos, cabeçotes, serpentinas) conforme desenho.": "MEC-TNQ-01",
+  "Testar os alarmes de nível alto/baixo e os intertravamentos de enchimento/esvaziamento do tanque, quando previstos.": "MEC-TNQ-07",
+  "Verificar aterramento/equipotencialização do tanque/silo e continuidade das ligações.": "MEC-TNQ-04",
+  "Verificar chumbadores, suportes, nivelamento/prumo e condição da base.": "MEC-TNQ-09",
+  "Verificar limpeza interna e ausência de materiais estranhos antes do fechamento.": "MEC-TNQ-11",
+  "Verificar respiro, válvula de segurança (quando o P&ID indicar PSV no tanque), extravasor e drenos desobstruídos.": "MEC-TNQ-03"
+ },
+ "MEC-TRL": {
+  "Circular água pela torre com FCV-30017 e verificar distribuição, nível no fundo (LIT/LSH/LSL-30017) e ausência de arraste.": "MEC-TRL-03",
+  "Confirmar a atuação da válvula de alívio de CO₂ XV-30045 no topo e a linha livre até o respiro.": "MEC-TRL-04",
+  "Confirmar com o projetista se o ventilador VNT-3001 (legenda do 003B) permanece no projeto (consulta C-02).": "MEC-TRL-06",
+  "Confirmar limpeza interna e teste de estanqueidade/pressão quando aplicável.": "MEC-TRL-08",
+  "Testar os permissivos e o controle das bombas de recirculação e válvulas associadas à torre.": "MEC-TRL-05",
+  "Verificar dreno de fundo (VBB-3037) e os ramais de sucção individuais de BCE-3018A (VBB-3038) e BCE-3018B (VBB-3039).": "MEC-TRL-02",
+  "Verificar internos da TRL-3001 (distribuidor de água e enchimento/pratos) conforme desenho do fabricante antes do fechamento.": "MEC-TRL-01",
+  "Verificar prumo, suportes, internos/recheios, distribuidores, bocais e manways.": "MEC-TRL-07"
+ },
+ "MEC-VBB": {
+  "Conferir tag e diâmetro contra o P&ID.": "MEC-VBB-01",
+  "Deixar a válvula na posição definida pela lista de alinhamento para o teste funcional do sistema.": "MEC-VBB-02",
+  "Executar abertura/fechamento completo e verificar curso, travamento e indicação de posição.": "MEC-VBB-04",
+  "Verificar estanqueidade na posição fechada durante teste do sistema.": "MEC-VBB-05",
+  "Verificar orientação, fixação, acessibilidade e sentido de operação.": "MEC-VBB-03"
+ },
+ "MEC-VEN": {
+  "Confirmar sentido de rotação e operar verificando vibração e ruído.": "MEC-VEN-03",
+  "VNT-3001 não foi localizado no desenho (consulta C-02) e VEN-780 não está nos P&IDs da área 700 (consulta C-08): confirmar existência e localização antes do teste.": "MEC-VEN-04",
+  "Verificar fixação, giro livre do rotor e, em acionamento por correia, tensão e alinhamento das correias.": "MEC-VEN-01",
+  "Verificar posição e atuação do damper, quando existir.": "MEC-VEN-02"
+ },
+ "MEC-VES": {
+  "Conferir tag e diâmetro contra o P&ID.": "MEC-VES-01",
+  "Deixar na posição definida pela lista de alinhamento (drenos e amostras normalmente fechados).": "MEC-VES-02",
+  "Executar abertura/fechamento completo e verificar curso, travamento e indicação de posição.": "MEC-VES-04",
+  "Verificar estanqueidade na posição fechada durante teste do sistema.": "MEC-VES-05",
+  "Verificar orientação, fixação, acessibilidade e sentido de operação.": "MEC-VES-03"
+ },
+ "MEC-VGA": {
+  "Conferir tag e diâmetro contra o P&ID.": "MEC-VGA-01",
+  "Executar abertura/fechamento completo e verificar curso, travamento e indicação de posição.": "MEC-VGA-05",
+  "Na admissão de vapor (VGA-2001/2002/2003 e header 8\"-VES), abrir de forma lenta para aquecimento da linha e drenagem pelo purgador.": "MEC-VGA-03",
+  "Operar em curso completo e verificar haste e gaxeta sem vazamento.": "MEC-VGA-02",
+  "Verificar estanqueidade na posição fechada durante teste do sistema.": "MEC-VGA-06",
+  "Verificar orientação, fixação, acessibilidade e sentido de operação.": "MEC-VGA-04"
+ },
+ "MEC-VRE": {
+  "Conferir tag e diâmetro contra o P&ID.": "MEC-VRE-01",
+  "Confirmar seta de fluxo no sentido do P&ID e posição de montagem (horizontal/vertical) compatível com o tipo da válvula.": "MEC-VRE-02",
+  "No teste da bomba ou do ramal associado, confirmar fechamento sem refluxo no desligamento.": "MEC-VRE-03"
+ },
+ "MEC-VRT": {
+  "Confirmar sentido de rotação e operar em vazio, verificando ruído e ausência de raspagem.": "MEC-VRT-02",
+  "Identificar o motor de cada VRT-40001/40002/40003: a lista registra as válvulas como motorizadas, sem motor com tag próprio.": "MEC-VRT-04",
+  "Testar o ajuste de velocidade (quando o acionamento dispuser de inversor) e os intertravamentos com o processo associado.": "MEC-VRT-03",
+  "Verificar alinhamento de eixos/acoplamentos e livre rotação manual, quando aplicável.": "MEC-VRT-06",
+  "Verificar base, chumbadores, nivelamento, fixação e condição do graute.": "MEC-VRT-05",
+  "Verificar chutes/entradas/saídas e estanqueidade contra fuga de pó/produto.": "MEC-VRT-10",
+  "Verificar folgas rotor-carcaça e fixação conforme fabricante.": "MEC-VRT-01",
+  "Verificar lubrificação, níveis de óleo/graxa e pontos de lubrificação.": "MEC-VRT-07",
+  "Verificar proteções de partes móveis, acoplamentos e pontos de esmagamento.": "MEC-VRT-08",
+  "Verificar rotor/pás, folgas internas, vedação e ausência de contato com a carcaça.": "MEC-VRT-09"
+ },
+ "MEC-XM": {
+  "Testar a temporização/sequência de acionamento (quando configurável), evitando disparos indevidos ou acionamento insuficiente.": "MEC-XM-04",
+  "Teste da saída digital (SD) da RTS: comandar XM-20001/20002 pelo supervisório, medir o comando nos bornes da borneira indicada na RTS e confirmar o golpe em campo.": "MEC-XM-02",
+  "Verificar fixação do martelo e integridade da estrutura/moega no ponto de montagem.": "MEC-XM-05",
+  "Verificar se as DESCRIÇÕES e ENDEREÇOS dos dois pontos estão corretos na tela e se o HISTÓRICO registra (colunas da RTS).": "MEC-XM-03",
+  "Verificar suprimento de ar comprimido alinhado, filtro-regulador ajustado conforme fabricante.": "MEC-XM-01"
+ },
+ "OPE-ACV": {
+  "Executar ciclos completos de abertura/fechamento sob condição segura.": "OPE-ACV-07",
+  "Operar a ACV-20001 em manual pela tela e conferir a dosagem.": "OPE-ACV-01",
+  "Testar comandos local/remoto, intertravamentos e tempo de atuação.": "OPE-ACV-06",
+  "Testar solenóide, fins de curso/feedbacks e posição de falha.": "OPE-ACV-05",
+  "Verificar ar de instrumento, regulador/filtro, tubulações e ausência de vazamentos, quando pneumática.": "OPE-ACV-04",
+  "Verificar condição de vedações e ausência de vazamentos/fuga de produto.": "OPE-ACV-03",
+  "Verificar sentido de fluxo/posição, fixação, alinhamento e livre movimento da válvula/comporta.": "OPE-ACV-02"
+ },
+ "OPE-AGT": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-AGT-03",
+  "Conhecer o nível mínimo do tanque para ligar o agitador e o alarme/trip de torque.": "OPE-AGT-02",
+  "Executar partida e confirmar sentido de rotação.": "OPE-AGT-09",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-AGT-04",
+  "Operar o equipamento e verificar ruído, vibração, temperatura de mancais/motor e vazamentos.": "OPE-AGT-10",
+  "Partir e parar pela tela; confirmar status e torque (WIT) visíveis ao operador.": "OPE-AGT-01",
+  "Registrar parâmetros de referência do teste (corrente e variáveis de processo aplicáveis).": "OPE-AGT-11",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-AGT-05",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-AGT-07",
+  "Testar permissivo de nível mínimo para operação, quando previsto.": "OPE-AGT-08",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-AGT-06"
+ },
+ "OPE-AIT": {
+  "Confirmar a leitura coerente na tela e conhecer a rotina de verificação/calibração do sensor.": "OPE-AIT-01"
+ },
+ "OPE-BBT": {
+  "Executar teste de injeção e verificar aquecimento uniforme, condensação e ausência de golpe de aríete.": "OPE-BBT-03",
+  "Testar permissivos de injeção de vapor e lógica de temperatura/pressão, quando previstos.": "OPE-BBT-02",
+  "Verificar instrumentos/controle de pressão e temperatura associados ao vapor.": "OPE-BBT-01"
+ },
+ "OPE-BCE": {
+  "Alinhar sucção e descarga conforme procedimento e partir/parar pela tela e pela botoeira local.": "OPE-BCE-01",
+  "Confirmar a leitura de pressão no PI local e os alarmes de falha da bomba na tela.": "OPE-BCE-02",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-BCE-04",
+  "Conhecer a alternância A/B nos pares de bombas, quando o procedimento a definir.": "OPE-BCE-03",
+  "Executar partida e confirmar sentido de rotação.": "OPE-BCE-11",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-BCE-05",
+  "Operar o equipamento e verificar ruído, vibração, temperatura de mancais/motor e vazamentos.": "OPE-BCE-12",
+  "Registrar parâmetros de referência do teste (corrente e variáveis de processo aplicáveis).": "OPE-BCE-13",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-BCE-07",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-BCE-09",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-BCE-08",
+  "Testar proteção/permissivo contra funcionamento a seco ou nível baixo, quando previsto.": "OPE-BCE-10",
+  "Verificar pressão de sucção/descarga e instrumentos de vazão/pressão associados, quando existentes.": "OPE-BCE-06"
+ },
+ "OPE-BDO": {
+  "Ajustar e ler a vazão de dosagem; conferir o nível do tanque/IBC de origem antes de partir.": "OPE-BDO-01",
+  "Calibrar/validar vazão ou volume dosado na faixa de operação.": "OPE-BDO-05",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-BDO-03",
+  "Executar teste de injeção com fluido seguro/produto e verificar estanqueidade e repetibilidade.": "OPE-BDO-07",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-BDO-04",
+  "Testar comando manual/automático, setpoint de dosagem e permissivos do processo.": "OPE-BDO-06",
+  "Verificar alimentação, aterramento e proteção dos componentes elétricos do sistema.": "OPE-BDO-02"
+ },
+ "OPE-BDP": {
+  "Aplicar a regra de nunca partir a BDP-3001 com a descarga fechada; partir e parar pela tela.": "OPE-BDP-01",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-BDP-02",
+  "Executar partida e confirmar sentido de rotação.": "OPE-BDP-09",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-BDP-03",
+  "Operar o equipamento e verificar ruído, vibração, temperatura de mancais/motor e vazamentos.": "OPE-BDP-10",
+  "Registrar parâmetros de referência do teste (corrente e variáveis de processo aplicáveis).": "OPE-BDP-11",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-BDP-05",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-BDP-07",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-BDP-06",
+  "Testar proteção/permissivo contra funcionamento a seco ou nível baixo, quando previsto.": "OPE-BDP-08",
+  "Verificar pressão de sucção/descarga e instrumentos de vazão/pressão associados, quando existentes.": "OPE-BDP-04"
+ },
+ "OPE-CHL": {
+  "Acompanhar pela tela o alinhamento dos circuitos e as leituras de pressão, temperatura e condutividade de condensado.": "OPE-CHL-01",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-CHL-02",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-CHL-03",
+  "Operar o chiller e registrar temperaturas, pressões, corrente e capacidade de resfriamento.": "OPE-CHL-06",
+  "Testar sequência automática, setpoint, proteções de alta/baixa pressão, anticongelamento e fluxo.": "OPE-CHL-05",
+  "Verificar pressões/temperaturas de sucção/descarga e água de entrada/saída.": "OPE-CHL-04"
+ },
+ "OPE-CLT": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-CLT-02",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-CLT-03",
+  "Executar teste de rotação e padrão de lavagem/cobertura, quando possível.": "OPE-CLT-06",
+  "Executar uma etapa de CIP com água pela tela e confirmar em campo o funcionamento do cabeçote.": "OPE-CLT-01",
+  "Testar sequência CIP, permissivos e intertravamentos de válvulas/bombas associados.": "OPE-CLT-05",
+  "Verificar pressão/vazão de alimentação do cabeçote conforme requisito do fabricante.": "OPE-CLT-04"
+ },
+ "OPE-DCT": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-DCT-01",
+  "Executar teste com processo e registrar rotação, torque, vibração, temperaturas e qualidade de separação.": "OPE-DCT-07",
+  "Executar teste com água/sem carga antes do produto, conforme procedimento do fabricante.": "OPE-DCT-06",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-DCT-02",
+  "Testar sequência automática de partida/parada, lubrificação, flushing e emergência.": "OPE-DCT-04",
+  "Testar sinais de rotação, vibração, temperatura, torque/carga e demais proteções do fabricante.": "OPE-DCT-03",
+  "Testar trips por sobrevelocidade, vibração, sobrecarga/torque e falhas críticas, conforme aplicável.": "OPE-DCT-05"
+ },
+ "OPE-DIT": {
+  "Confirmar a leitura coerente na tela (°Brix / % etanol) e o alinhamento do skid.": "OPE-DIT-01"
+ },
+ "OPE-ECA": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-ECA-01",
+  "Executar partida e confirmar sentido de rotação.": "OPE-ECA-08",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-ECA-02",
+  "Operar o equipamento e verificar ruído, vibração, temperatura de mancais/motor e vazamentos.": "OPE-ECA-09",
+  "Registrar parâmetros de referência do teste (corrente e variáveis de processo aplicáveis).": "OPE-ECA-10",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-ECA-04",
+  "Testar intertravamento com alimentação e descarga do elevador.": "OPE-ECA-07",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-ECA-06",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-ECA-05",
+  "Testar sensores de velocidade zero, desalinhamento de correia e embuchamento, quando previstos.": "OPE-ECA-03"
+ },
+ "OPE-FAL": {
+  "Acionar um ciclo de limpeza manual/automático e acompanhar a pressão/indicação correspondente na tela.": "OPE-FAL-01",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-FAL-02",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-FAL-03",
+  "Operar o filtro e verificar estanqueidade, ΔP e qualidade do filtrado.": "OPE-FAL-05",
+  "Verificar medição/alarme de pressão diferencial, quando existente.": "OPE-FAL-04"
+ },
+ "OPE-FCV": {
+  "Executar ciclos completos de abertura/fechamento sob condição segura.": "OPE-FCV-07",
+  "Operar a válvula em manual pela tela e passar a malha para automático.": "OPE-FCV-01",
+  "Testar comandos local/remoto, intertravamentos e tempo de atuação.": "OPE-FCV-06",
+  "Testar solenóide, fins de curso/feedbacks e posição de falha.": "OPE-FCV-05",
+  "Verificar ar de instrumento, regulador/filtro, tubulações e ausência de vazamentos, quando pneumática.": "OPE-FCV-04",
+  "Verificar condição de vedações e ausência de vazamentos/fuga de produto.": "OPE-FCV-03",
+  "Verificar sentido de fluxo/posição, fixação, alinhamento e livre movimento da válvula/comporta.": "OPE-FCV-02"
+ },
+ "OPE-FIT": {
+  "Confirmar a leitura e o totalizador (quando existir) na tela durante a circulação com água.": "OPE-FIT-01"
+ },
+ "OPE-FLY": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-FLY-02",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-FLY-03",
+  "Incluir a limpeza periódica da tela na rotina e conhecer o sinal de tela suja (queda de pressão no indicador a jusante, quando existir).": "OPE-FLY-01",
+  "Operar o filtro e verificar estanqueidade, ΔP e qualidade do filtrado.": "OPE-FLY-05",
+  "Verificar medição/alarme de pressão diferencial, quando existente.": "OPE-FLY-04"
+ },
+ "OPE-FSL": {
+  "Reconhecer o alarme de lubrificação e o permissivo de partida do secador.": "OPE-FSL-01"
+ },
+ "OPE-IBC": {
+  "Executar a troca de IBC simulada (desconectar/conectar) e confirmar a identificação do produto.": "OPE-IBC-01"
+ },
+ "OPE-KSC": {
+  "Confirmar a leitura na tela durante o teste do skid de inertização.": "OPE-KSC-01"
+ },
+ "OPE-LCV": {
+  "Executar ciclos completos de abertura/fechamento sob condição segura.": "OPE-LCV-07",
+  "Operar a LCV-70001 em manual pela tela e passar a malha para automático.": "OPE-LCV-01",
+  "Testar comandos local/remoto, intertravamentos e tempo de atuação.": "OPE-LCV-06",
+  "Testar solenóide, fins de curso/feedbacks e posição de falha.": "OPE-LCV-05",
+  "Verificar ar de instrumento, regulador/filtro, tubulações e ausência de vazamentos, quando pneumática.": "OPE-LCV-04",
+  "Verificar condição de vedações e ausência de vazamentos/fuga de produto.": "OPE-LCV-03",
+  "Verificar sentido de fluxo/posição, fixação, alinhamento e livre movimento da válvula/comporta.": "OPE-LCV-02"
+ },
+ "OPE-LIT": {
+  "Confirmar nível e alarmes na tela durante o enchimento/esvaziamento com água.": "OPE-LIT-01"
+ },
+ "OPE-LS": {
+  "Reconhecer o alarme/intertravamento na tela e o procedimento de reset.": "OPE-LS-01"
+ },
+ "OPE-LSH": {
+  "Reconhecer o alarme de nível alto na tela e a ação operacional correspondente.": "OPE-LSH-01"
+ },
+ "OPE-LSL": {
+  "Reconhecer o alarme de nível baixo na tela e a ação operacional correspondente.": "OPE-LSL-01"
+ },
+ "OPE-MIS": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-MIS-02",
+  "Executar teste com produto e verificar homogeneização, corrente e vibração.": "OPE-MIS-08",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-MIS-03",
+  "Partir e parar pela tela; confirmar status e torque (WIT-40001) visíveis.": "OPE-MIS-01",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-MIS-04",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-MIS-06",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-MIS-05",
+  "Testar sequência com alimentação de ingredientes e permissivos de processo.": "OPE-MIS-07"
+ },
+ "OPE-MOE": {
+  "Acionar o martelo pneumático pela tela (MOE-2001) e confirmar os alarmes de nível alto/baixo.": "OPE-MOE-01",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-MOE-02",
+  "Executar teste de enchimento/esvaziamento e observar vazamentos, drenabilidade e funcionamento de respiros.": "OPE-MOE-06",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-MOE-03",
+  "Testar alarmes de nível alto/baixo e intertravamentos de enchimento/esvaziamento, quando previstos.": "OPE-MOE-05",
+  "Verificar tomadas, selos, poços termométricos e bocais de instrumentos quanto à posição e estanqueidade.": "OPE-MOE-04"
+ },
+ "OPE-PCV": {
+  "Executar ciclos completos de abertura/fechamento sob condição segura.": "OPE-PCV-07",
+  "Operar a válvula em manual pela tela e passar a malha para automático.": "OPE-PCV-01",
+  "Testar comandos local/remoto, intertravamentos e tempo de atuação.": "OPE-PCV-06",
+  "Testar solenóide, fins de curso/feedbacks e posição de falha.": "OPE-PCV-05",
+  "Verificar ar de instrumento, regulador/filtro, tubulações e ausência de vazamentos, quando pneumática.": "OPE-PCV-04",
+  "Verificar condição de vedações e ausência de vazamentos/fuga de produto.": "OPE-PCV-03",
+  "Verificar sentido de fluxo/posição, fixação, alinhamento e livre movimento da válvula/comporta.": "OPE-PCV-02"
+ },
+ "OPE-PDIT": {
+  "Conhecer o valor de ΔP de filtro limpo e o alarme de saturação das mangas.": "OPE-PDIT-01"
+ },
+ "OPE-PI": {
+  "Incluir o PI na ronda operacional e conhecer a faixa normal de leitura.": "OPE-PI-01"
+ },
+ "OPE-PIT": {
+  "Confirmar a leitura e os alarmes na tela durante a pressurização com água.": "OPE-PIT-01"
+ },
+ "OPE-PRM": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-PRM-02",
+  "Executar teste com produto e verificar homogeneização, corrente e vibração.": "OPE-PRM-08",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-PRM-03",
+  "Partir e parar o pré-masher na sequência de alimentação (moega → válvula rotativa → pré-masher) em vazio.": "OPE-PRM-01",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-PRM-04",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-PRM-06",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-PRM-05",
+  "Testar sequência com alimentação de ingredientes e permissivos de processo.": "OPE-PRM-07"
+ },
+ "OPE-PSLL": {
+  "Reconhecer o alarme de ar de instrumentação e seu efeito no secador.": "OPE-PSLL-01"
+ },
+ "OPE-PSV": {
+  "Conferir certificado de calibração/lacre e pressão de ajuste.": "OPE-PSV-02",
+  "Conhecer a pressão de ajuste e o destino da descarga; confirmar lacre na ronda.": "OPE-PSV-01",
+  "Validar documentação do teste de bancada e reinstalação pós-calibração.": "OPE-PSV-03"
+ },
+ "OPE-R1150": {
+  "Operar o skid pela tela conforme o manual do fornecedor (entrada de CO₂, inertização) e confirmar os alarmes.": "OPE-R1150-01"
+ },
+ "OPE-RED": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-RED-02",
+  "Executar partida e confirmar sentido de rotação.": "OPE-RED-09",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-RED-03",
+  "Operar o equipamento e verificar ruído, vibração, temperatura de mancais/motor e vazamentos.": "OPE-RED-10",
+  "Partir a cadeia de transportadores na ordem do fluxo inverso (de jusante para montante) pela tela, em vazio, e confirmar as paradas em cascata.": "OPE-RED-01",
+  "Registrar parâmetros de referência do teste (corrente e variáveis de processo aplicáveis).": "OPE-RED-11",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-RED-05",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-RED-07",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-RED-06",
+  "Testar sensores de velocidade zero, entupimento/desalinhamento e demais proteções, quando existentes.": "OPE-RED-04",
+  "Testar sequência com equipamentos a montante/jusante e bloqueio por falha do transportador seguinte.": "OPE-RED-08"
+ },
+ "OPE-RGN": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-RGN-02",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-RGN-03",
+  "Identificar os lados mosto e vinho e as válvulas de isolamento para a manobra de CIP.": "OPE-RGN-01",
+  "Operar com fluido e verificar temperaturas de aproximação e perda de carga.": "OPE-RGN-06",
+  "Testar válvula de controle, bypass e malha de temperatura associada, quando aplicável.": "OPE-RGN-05",
+  "Verificar indicações de temperatura e pressão na entrada/saída de ambos os lados, quando previstas.": "OPE-RGN-04"
+ },
+ "OPE-SC": {
+  "Atuar a botoeira de emergência e confirmar a parada e o reset.": "OPE-SC-02",
+  "Confirmar corrente e status visíveis ao operador na tela.": "OPE-SC-03",
+  "Partir e parar em LOCAL (botoeira) e em REMOTO (tela); confirmar a transferência local/remoto.": "OPE-SC-01"
+ },
+ "OPE-SCD": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-SCD-02",
+  "Executar aquecimento gradual e teste com produto, registrando temperaturas, corrente e umidade de saída.": "OPE-SCD-09",
+  "Executar em vazio a sequência de partida e parada do secador com o fornecedor, incluindo inertização com CO₂ e permissivos de lubrificação e de ar.": "OPE-SCD-01",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-SCD-03",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-SCD-05",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-SCD-07",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-SCD-06",
+  "Testar sequência de partida/parada, permissivos de ventilação/transportes e proteção de alta temperatura.": "OPE-SCD-08",
+  "Testar temperaturas, pressões, vazões, umidade e proteções térmicas, quando aplicáveis.": "OPE-SCD-04"
+ },
+ "OPE-SCT": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-SCT-01",
+  "Executar teste com processo e registrar rotação, torque, vibração, temperaturas e qualidade de separação.": "OPE-SCT-07",
+  "Executar teste com água/sem carga antes do produto, conforme procedimento do fabricante.": "OPE-SCT-06",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-SCT-02",
+  "Testar sequência automática de partida/parada, lubrificação, flushing e emergência.": "OPE-SCT-04",
+  "Testar sinais de rotação, vibração, temperatura, torque/carga e demais proteções do fabricante.": "OPE-SCT-03",
+  "Testar trips por sobrevelocidade, vibração, sobrecarga/torque e falhas críticas, conforme aplicável.": "OPE-SCT-05"
+ },
+ "OPE-SPD": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-SPD-02",
+  "Executar partida descarregada e elevar carga gradualmente, registrando pressão, corrente, temperatura e vibração.": "OPE-SPD-08",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-SPD-03",
+  "Partir e parar com a linha de CO₂ alinhada; confirmar o status na tela.": "OPE-SPD-01",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-SPD-05",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-SPD-07",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-SPD-06",
+  "Verificar pressão/vácuo, temperatura e demais proteções associadas.": "OPE-SPD-04"
+ },
+ "OPE-SPG": {
+  "Conhecer a posição do purgador e a verificação periódica de passagem de vapor.": "OPE-SPG-01"
+ },
+ "OPE-SS": {
+  "Reconhecer o alarme de velocidade zero e as paradas em cascata decorrentes.": "OPE-SS-01"
+ },
+ "OPE-TCP": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-TCP-02",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-TCP-03",
+  "Identificar os lados e as válvulas de isolamento; acompanhar temperaturas de entrada/saída na tela no teste com água.": "OPE-TCP-01",
+  "Operar com fluido e verificar temperaturas de aproximação e perda de carga.": "OPE-TCP-06",
+  "Testar válvula de controle, bypass e malha de temperatura associada, quando aplicável.": "OPE-TCP-05",
+  "Verificar indicações de temperatura e pressão na entrada/saída de ambos os lados, quando previstas.": "OPE-TCP-04"
+ },
+ "OPE-TCV": {
+  "Executar ciclos completos de abertura/fechamento sob condição segura.": "OPE-TCV-07",
+  "Operar a válvula em manual pela tela e passar a malha para automático.": "OPE-TCV-01",
+  "Testar comandos local/remoto, intertravamentos e tempo de atuação.": "OPE-TCV-06",
+  "Testar solenóide, fins de curso/feedbacks e posição de falha.": "OPE-TCV-05",
+  "Verificar ar de instrumento, regulador/filtro, tubulações e ausência de vazamentos, quando pneumática.": "OPE-TCV-04",
+  "Verificar condição de vedações e ausência de vazamentos/fuga de produto.": "OPE-TCV-03",
+  "Verificar sentido de fluxo/posição, fixação, alinhamento e livre movimento da válvula/comporta.": "OPE-TCV-02"
+ },
+ "OPE-TI": {
+  "Incluir o TI na ronda operacional e conhecer a faixa normal de leitura.": "OPE-TI-01"
+ },
+ "OPE-TNQ": {
+  "Confirmar a lista de alinhamento de válvulas do tanque para a partida.": "OPE-TNQ-01",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-TNQ-02",
+  "Executar teste de enchimento/esvaziamento e observar vazamentos, drenabilidade e funcionamento de respiros.": "OPE-TNQ-06",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-TNQ-03",
+  "Testar alarmes de nível alto/baixo e intertravamentos de enchimento/esvaziamento, quando previstos.": "OPE-TNQ-05",
+  "Verificar tomadas, selos, poços termométricos e bocais de instrumentos quanto à posição e estanqueidade.": "OPE-TNQ-04"
+ },
+ "OPE-TRL": {
+  "Circular água de lavagem pela tela (FCV-30017, BCE-3018A/B) e acompanhar nível e densidade.": "OPE-TRL-01",
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-TRL-02",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-TRL-03",
+  "Operar com utilidade/processo e verificar distribuição, perda de carga e ausência de arraste/vazamentos anormais.": "OPE-TRL-06",
+  "Testar permissivos e controle das bombas/válvulas associadas.": "OPE-TRL-05",
+  "Verificar nível, pressão, temperatura e vazões associadas ao lavador/coluna.": "OPE-TRL-04"
+ },
+ "OPE-TT": {
+  "Confirmar a leitura e os alarmes de temperatura na tela (processo e mancais).": "OPE-TT-01"
+ },
+ "OPE-VBB": {
+  "Operar a válvula e confirmar a posição da lista de alinhamento da partida.": "OPE-VBB-01"
+ },
+ "OPE-VEN": {
+  "Partir e parar pela tela; confirmar o status e a posição do damper, quando existir.": "OPE-VEN-01"
+ },
+ "OPE-VES": {
+  "Operar a válvula e confirmar a posição da lista de alinhamento (drenos/amostras).": "OPE-VES-01"
+ },
+ "OPE-VGA": {
+  "Executar a manobra lenta de admissão de vapor com drenagem prévia da linha.": "OPE-VGA-01"
+ },
+ "OPE-VRE": {
+  "Conhecer o sentido de fluxo e a função da retenção no circuito.": "OPE-VRE-01"
+ },
+ "OPE-VRT": {
+  "Confirmar instalação, TAG, faixa e calibração dos instrumentos associados ao equipamento.": "OPE-VRT-02",
+  "Executar partida e confirmar sentido de rotação.": "OPE-VRT-09",
+  "Executar teste de malha dos sinais analógicos/digitais associados, do campo até PLC/HMI.": "OPE-VRT-03",
+  "Operar o equipamento e verificar ruído, vibração, temperatura de mancais/motor e vazamentos.": "OPE-VRT-10",
+  "Partir e parar pela tela junto com o transportador associado; confirmar o status.": "OPE-VRT-01",
+  "Registrar parâmetros de referência do teste (corrente e variáveis de processo aplicáveis).": "OPE-VRT-11",
+  "Testar ajuste de velocidade/dosagem e intertravamentos com processo.": "OPE-VRT-08",
+  "Testar comandos LIGA/DESLIGA em local e remoto e respectivos retornos de estado.": "OPE-VRT-05",
+  "Testar parada de emergência e condição segura após falha de energia/comunicação, quando aplicável.": "OPE-VRT-07",
+  "Testar permissivos, intertravamentos e alarmes associados ao equipamento.": "OPE-VRT-06",
+  "Verificar referência de velocidade/posição e realimentação, quando aplicável.": "OPE-VRT-04"
+ },
+ "OPE-WIT": {
+  "Reconhecer os alarmes de torque elevado (WAH) e de trip (WSH) na tela e o procedimento de reset.": "OPE-WIT-01"
+ },
+ "OPE-XM": {
+  "Acionar pela tela e confirmar o golpe em campo.": "OPE-XM-01",
+  "Executar ciclos e verificar eficácia de desincrustação sem danos à estrutura.": "OPE-XM-05",
+  "Testar solenóide e acionamento pneumático.": "OPE-XM-03",
+  "Testar temporização/sequência e permissivos para evitar acionamento inadequado.": "OPE-XM-04",
+  "Verificar pressão/qualidade do ar, filtro-regulador, mangueiras e conexões.": "OPE-XM-02"
+ },
+ "OPE-XV": {
+  "Abrir e fechar pela tela e confirmar o status aberto/fechado e o alarme de discrepância.": "OPE-XV-01",
+  "Executar ciclos completos de abertura/fechamento sob condição segura.": "OPE-XV-07",
+  "Testar comandos local/remoto, intertravamentos e tempo de atuação.": "OPE-XV-06",
+  "Testar solenóide, fins de curso/feedbacks e posição de falha.": "OPE-XV-05",
+  "Verificar ar de instrumento, regulador/filtro, tubulações e ausência de vazamentos, quando pneumática.": "OPE-XV-04",
+  "Verificar condição de vedações e ausência de vazamentos/fuga de produto.": "OPE-XV-03",
+  "Verificar sentido de fluxo/posição, fixação, alinhamento e livre movimento da válvula/comporta.": "OPE-XV-02"
+ }
+}

@@ -1,0 +1,34 @@
+[
+ {
+  "id": "200",
+  "nome": "Preparo da pasta, hidrólise e resfriamento do mosto",
+  "centrais": 12,
+  "equip": 245,
+  "checklists": 608,
+  "itens": 3335
+ },
+ {
+  "id": "300",
+  "nome": "Fermentação, separação do levedo e pré-fermentação",
+  "centrais": 24,
+  "equip": 642,
+  "checklists": 1619,
+  "itens": 9500
+ },
+ {
+  "id": "400",
+  "nome": "Separação de fibras, secagem e resfriamento do DDGS",
+  "centrais": 41,
+  "equip": 681,
+  "checklists": 1769,
+  "itens": 10511
+ },
+ {
+  "id": "700",
+  "nome": "Utilidades — CIP e tratamento",
+  "centrais": 11,
+  "equip": 143,
+  "checklists": 321,
+  "itens": 1971
+ }
+]
