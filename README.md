@@ -72,6 +72,17 @@ centrais/200.TNQ-2001
 - O status (não iniciado / em andamento / aprovado) não é gravado: o app calcula comparando `checked` com a lista de itens.
 - Coleção `usuarios`: um documento por pessoa liberada (ID = UID do login).
 
+## Exportar os dados
+
+No app, toque no botão de sincronização (canto superior direito) → **Exportar dados…** → digite a senha de exportação → escolha:
+
+- **Planilha (CSV):** uma linha por item de checklist de todas as áreas (cerca de 25 mil linhas), marcados ou não, com área, equipamento central, tag, tipo, especialidade, status do checklist, código e texto da tarefa, "Marcado" (Sim/Não), quem alterou e quando. Abre direto no Excel em português (separador `;`) e no Power BI.
+- **Backup (JSON):** cópia fiel da coleção `centrais`, com as datas no formato ISO.
+
+Prefira exportar no computador e com internet: sem conexão, o arquivo sai com os dados guardados naquele aparelho (o app avisa). Cada exportação lê cerca de 90 documentos da cota diária.
+
+A senha não está escrita no código: o app guarda só o resumo SHA-256 dela. Para trocar, gere o resumo da senha nova (por exemplo, em Python: `hashlib.sha256('nova'.encode()).hexdigest()`) e substitua `SENHA_SHA256` em `js/app.js`.
+
 ## Dados de referência (pasta `dados/`)
 
 Gerados a partir da **Lista de Equipamentos Consolidada** e do **Book de Comissionamento**:
