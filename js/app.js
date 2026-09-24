@@ -2,7 +2,7 @@
 // Toda a leitura/gravação passa por store.js.
 import * as store from './store.js';
 
-const VERSAO = '1.0.0';
+const VERSAO = '1.1.0';
 const SECS = ['MEC', 'ELE', 'INS', 'OPE'];
 const SEC = { MEC: 'Mecânica', ELE: 'Elétrica', INS: 'Instrumentação', OPE: 'Operação' };
 const ONDE = { C: 'Campo', S: 'Supervisório', CS: 'Campo + Supervisório' };
@@ -89,8 +89,8 @@ function syncUI() {
   $sync.hidden = false;
   let cls = 'ok', txt = 'Sincronizado';
   if (erroBanco === 'permission-denied') { cls = 'err'; txt = 'Sem acesso'; }
-  else if (!navigator.onLine) { cls = pendentes ? 'pend' : 'off'; txt = pendentes ? 'Offline · ' + pendentes + ' a enviar' : 'Offline'; }
-  else if (pendentes) { cls = 'pend'; txt = 'Enviando ' + pendentes + '…'; }
+  else if (!navigator.onLine) { cls = pendentes ? 'pend' : 'off'; txt = pendentes ? 'Offline · a enviar' : 'Offline'; }
+  else if (pendentes) { cls = 'pend'; txt = 'Enviando…'; }
   else if (!areaAtiva) { cls = 'ok'; txt = 'Conectado'; }
   else if (doCache) { cls = 'off'; txt = 'Conectando…'; }
   $sync.className = 'sync ' + cls;
@@ -104,12 +104,12 @@ function renderSheet() {
     <h2 id="sh-t">Sincronização</h2>
     <p>${estado}</p>
     <dl class="kv"><dt>Usuário</dt><dd>${esc(user && user.email)}</dd>
-      <dt>A enviar</dt><dd class="num">${areaAtiva ? `${pendentes} ${pendentes === 1 ? 'checklist' : 'checklists'} (área ${areaAtiva})` : '—'}</dd>
+      <dt>A enviar</dt><dd class="num">${areaAtiva ? (pendentes ? `alterações em ${pendentes} ${pendentes === 1 ? 'equipamento central' : 'equipamentos centrais'} (área ${areaAtiva})` : 'nada pendente') : '—'}</dd>
       <dt>Versão</dt><dd class="num">${VERSAO}</dd></dl>
     <div class="row"><button class="btn pri" data-act="close">Fechar</button></div>
     <hr>
     ${confirmSair
-      ? `<p>${pendentes ? `<b>Há ${pendentes} checklist(s) ainda não enviados.</b> Se sair agora, essas marcações podem ser perdidas. ` : ''}Confirma a saída?</p>
+      ? `<p>${pendentes ? `<b>Há marcações ainda não enviadas.</b> Se sair agora, essas marcações podem ser perdidas. ` : ''}Confirma a saída?</p>
          <div class="row"><button class="btn danger" data-act="sair-ok">Sair</button><button class="btn" data-act="sair-no">Cancelar</button></div>`
       : `<div class="row"><button class="btn" data-act="sair">Sair da conta</button></div>`}
   </div>`;
@@ -365,7 +365,7 @@ $view.addEventListener('change', e => {
   const before = stat(a, nav.loc, nav.sec).s;
   // aplica na tela na hora; o snapshot do Firestore (cache local) confirma logo em seguida
   docs[id] = Object.assign({}, docs[id], { checked: Object.assign({}, checkedOf(id), { [inp.dataset.item]: inp.checked }), por: user.email });
-  store.marcarItem(nav.a, nav.loc, nav.sec, inp.dataset.item, inp.checked, user.email).catch(err => {
+  store.marcarItem(nav.a, a.EQ[nav.loc].c, nav.loc, nav.sec, inp.dataset.item, inp.checked, user.email).catch(err => {
     if (err && err.code === 'permission-denied') { erroBanco = 'permission-denied'; render(); syncUI(); }
   });
   inp.closest('.item').classList.toggle('done', inp.checked);

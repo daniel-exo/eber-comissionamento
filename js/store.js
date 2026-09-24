@@ -38,24 +38,39 @@ export async function acessoLiberado(uid) {
 }
 
 /* ---------------- checklists ----------------
-   Um documento por checklist (equipamento × especialidade), com ID = <local na lista>~<especialidade>,
-   ex.: "200.TNQ-2001.AGT-2001~MEC". O campo "checked" guarda { <id do item>: true|false }.
-   A gravação usa merge, item a item: duas pessoas marcando itens diferentes do mesmo checklist
-   (mesmo offline) nunca apagam a marcação uma da outra. */
-const docId = (loc, sec) => loc + '~' + sec;
+   Um documento por EQUIPAMENTO CENTRAL (coleção "centrais", ID = <área>.<tag central>, ex. "200.TNQ-2001"),
+   com todos os checklists dos equipamentos dele no mapa "ck". Assim, abrir uma área lê poucas dezenas de
+   documentos em vez de milhares — o que mantém o app folgado dentro da cota gratuita de leituras.
+
+   centrais/200.TNQ-2001 = {
+     area: "200", central: "TNQ-2001", por: <último e-mail>, em: <hora do servidor>,
+     ck: { "200:TNQ-2001:AGT-2001~MEC": { checked: { "MEC-AGT-01": true, ... }, por, em }, ... }
+   }
+   A chave de cada checklist é o local na lista com ":" no lugar de "." + "~" + especialidade.
+   A gravação usa merge item a item: pessoas marcando itens diferentes (mesmo offline) não apagam
+   a marcação uma da outra; no mesmo item, vale a última que chegar ao banco. */
+const chave = (loc, sec) => loc.replace(/\./g, ':') + '~' + sec;
+const idLocal = k => { const [l, s] = k.split('~'); return l.replace(/:/g, '.') + '~' + s; };
 
 export function observarArea(area, cb, erro) {
-  const q = query(collection(fs, 'checklists'), where('area', '==', area));
+  const q = query(collection(fs, 'centrais'), where('area', '==', area));
   return onSnapshot(q, { includeMetadataChanges: true }, snap => {
     const docs = {};
     let pendentes = 0;
-    snap.docs.forEach(d => { docs[d.id] = d.data({ serverTimestamps: 'estimate' }); if (d.metadata.hasPendingWrites) pendentes++; });
+    snap.docs.forEach(d => {
+      const ck = (d.data({ serverTimestamps: 'estimate' }).ck) || {};
+      for (const k in ck) docs[idLocal(k)] = ck[k];
+      if (d.metadata.hasPendingWrites) pendentes++;
+    });
     cb(docs, { pendentes, doCache: snap.metadata.fromCache });
   }, e => erro && erro(e));
 }
 
-export function marcarItem(area, loc, sec, itemId, valor, email) {
-  const ref = doc(fs, 'checklists', docId(loc, sec));
+export function marcarItem(area, central, loc, sec, itemId, valor, email) {
+  const ref = doc(fs, 'centrais', area + '.' + central);
   // não esperamos a confirmação do servidor: offline, a promessa só resolve quando a conexão voltar
-  return setDoc(ref, { area, loc, sec, checked: { [itemId]: valor }, por: email, em: serverTimestamp() }, { merge: true });
+  return setDoc(ref, {
+    area, central, por: email, em: serverTimestamp(),
+    ck: { [chave(loc, sec)]: { checked: { [itemId]: valor }, por: email, em: serverTimestamp() } },
+  }, { merge: true });
 }
