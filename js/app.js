@@ -2,13 +2,13 @@
 // Toda a leitura/gravação passa por store.js.
 import * as store from './store.js';
 
-const VERSAO = '1.3.2';
+const VERSAO = '1.4.1';
 const SECS = ['MEC', 'ELE', 'INS', 'OPE'];
 const SEC = { MEC: 'Mecânica', ELE: 'Elétrica', INS: 'Instrumentação', OPE: 'Operação' };
 const ONDE = { C: 'Campo', S: 'Supervisório', CS: 'Campo + Supervisório' };
 const LOGOS = `<div class="logos">
   <img class="logo tema-claro" src="icones/logo.png" alt="EBER Bioenergia e Agricultura"><img class="logo tema-escuro" src="icones/eber-branco.png" alt="EBER Bioenergia e Agricultura" onerror="this.onerror=null;this.src='icones/logo.png';this.classList.add('fallback')">
-  <img class="logo tema-claro" src="icones/exo-escuro.png" alt="EXO Excelência Organizacional"><img class="logo tema-escuro" src="icones/exo.png" alt="EXO Excelência Organizacional"></div>`;
+</div>`;
 const CHECK_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
 
 const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
@@ -329,7 +329,10 @@ function viewSemAcesso() {
 function areaResumo(ar) {
   const a = AREA[ar.id];
   if (a && areaAtiva === ar.id && !doCache) return aggregate(a, allItens(a));
-  return lsGet('resumo-' + ar.id);
+  // resumo guardado no aparelho só vale se foi calculado com a mesma lista de equipamentos que está no ar
+  // (mesmo número de checklists e de itens); se a lista mudou (ex.: equipamentos retirados), é descartado
+  const r = lsGet('resumo-' + ar.id);
+  return r && r.n === ar.checklists && r.ti === ar.itens ? r : null;
 }
 function viewAreas() {
   crumb('Comissionamento', 'EBER Bioenergia · Montes Claros de Goiás/GO');

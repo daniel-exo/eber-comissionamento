@@ -1,7 +1,7 @@
 // Service worker: guarda o app e os dados no aparelho para abrir sem internet.
 // Estratégia "stale-while-revalidate": abre na hora com o que está guardado e busca a versão nova
 // em segundo plano (vale a partir da próxima abertura). O tráfego do Firebase não passa por aqui.
-const CACHE = 'eber-comiss-v6';
+const CACHE = 'eber-comiss-v8';
 const ARQUIVOS = [
   './', 'index.html', 'app.css', 'manifest.webmanifest',
   'js/app.js', 'js/store.js', 'js/firebase-config.js', 'js/vendor/firebase.js',
@@ -11,7 +11,8 @@ const ARQUIVOS = [
 ];
 self.addEventListener('install', e => {
   // guarda arquivo por arquivo: se algum faltar no servidor, os outros continuam disponíveis offline
-  e.waitUntil(caches.open(CACHE).then(c => Promise.all(ARQUIVOS.map(u => c.add(u).catch(() => null)))).then(() => self.skipWaiting()));
+  // cache: 'reload' busca direto no servidor, sem reaproveitar cópia antiga do navegador
+  e.waitUntil(caches.open(CACHE).then(c => Promise.all(ARQUIVOS.map(u => c.add(new Request(u, { cache: 'reload' })).catch(() => null)))).then(() => self.skipWaiting()));
 });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));

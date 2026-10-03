@@ -1,0 +1,14 @@
+# Equipamentos FORA do app (fase de expansão).
+# Uma linha por equipamento: o tag (ex.: TNQ-4011) ou o local completo da lista (ex.: 400.TNQ-4011.AGT-4011).
+# O equipamento sai do app junto com tudo o que está abaixo dele (ligados e subequipamentos).
+# Para um grupo A/B, use o local com a área: 400.A
+# Nada é apagado do banco: as marcações já feitas continuam guardadas e reaparecem se a linha for retirada daqui.
+# Linhas começando com # são comentários.
+
+# 01/10/2026 — fase de expansão (pedido do Daniel)
+CHL-4003     # chiller 03, área 400, com tudo abaixo dele
+SCD-4003     # secador 03, área 400, com tudo abaixo dele
+BCE-780      # área 700 (grupo B)
+BCE-781      # área 700 (grupo B)
+SC-70023     # área 700 (grupo B)
+VEN-780      # área 700 (grupo B)

@@ -5,7 +5,7 @@
   "centrais": 12,
   "equip": 245,
   "checklists": 608,
-  "itens": 3335
+  "itens": 3326
  },
  {
   "id": "300",
@@ -13,22 +13,22 @@
   "centrais": 24,
   "equip": 642,
   "checklists": 1619,
-  "itens": 9500
+  "itens": 9476
  },
  {
   "id": "400",
   "nome": "Separação de fibras, secagem e resfriamento do DDGS",
-  "centrais": 41,
-  "equip": 681,
-  "checklists": 1769,
-  "itens": 10511
+  "centrais": 39,
+  "equip": 593,
+  "checklists": 1525,
+  "itens": 8989
  },
  {
   "id": "700",
   "nome": "Utilidades — CIP e tratamento",
-  "centrais": 11,
-  "equip": 143,
-  "checklists": 321,
-  "itens": 1971
+  "centrais": 10,
+  "equip": 139,
+  "checklists": 313,
+  "itens": 1888
  }
 ]

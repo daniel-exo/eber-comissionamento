@@ -10,6 +10,12 @@ o ID de cada texto de tarefa. Um texto já registrado mantém sempre o mesmo ID,
 ordem mude no book; um texto novo recebe o próximo número livre. Assim, as marcações já
 gravadas no banco nunca "mudam de item". Se um texto for apenas corrigido (erro de digitação),
 edite o registro à mão para o texto novo herdar o ID antigo.
+
+Equipamentos fora do app (ex.: fase de expansão): liste-os em ferramentas/expansao.txt.
+Cada linha é um tag (ex.: TNQ-4011) ou um local completo da lista (ex.: 400.TNQ-4011.AGT-4011).
+O equipamento sai do app junto com tudo o que está abaixo dele na hierarquia. Nada é apagado do
+banco: as marcações já gravadas desses equipamentos continuam lá, só deixam de aparecer.
+Se alguma linha do arquivo não corresponder a nenhum equipamento, o gerador para sem gravar nada.
 """
 import json, sys, os, re
 import openpyxl
@@ -17,6 +23,19 @@ import openpyxl
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(AQUI)
 REG = os.path.join(AQUI, 'registro-ids.json')
+EXPANSAO = os.path.join(AQUI, 'expansao.txt')
+
+
+def ler_expansao():
+    """Lê ferramentas/expansao.txt: um tag ou local por linha; '#' inicia comentário."""
+    if not os.path.exists(EXPANSAO):
+        return []
+    out = []
+    for linha in open(EXPANSAO, encoding='utf-8'):
+        e = linha.split('#', 1)[0].strip().upper()
+        if e:
+            out.append(e)
+    return out
 
 AREAS = {
     '200': 'Preparo da pasta, hidrólise e resfriamento do mosto',
@@ -81,12 +100,21 @@ def main(xlsx, ckjson):
         tipos_out[cat]['L'] = chaves
         opecom[cat] = [{'t': x['t'], 'o': x['o']} for x in ope[cat]['com']]
 
-    json.dump({'tipos': tipos_out, 'listas': listas, 'opeCom': opecom},
-              open(os.path.join(RAIZ, 'dados', 'listas.json'), 'w', encoding='utf-8'),
-              ensure_ascii=False, separators=(',', ':'))
-
     rows = list(openpyxl.load_workbook(xlsx, read_only=True).worksheets[0].iter_rows(values_only=True))[1:]
-    resumo = []
+    exclusoes = ler_expansao()
+    usadas = {e: 0 for e in exclusoes}
+
+    def fora(loc):
+        """True se o local (ou algum equipamento acima dele) está na lista da expansão."""
+        segs = loc.split('.')[1:]
+        hit = False
+        for e in exclusoes:
+            if ('.' in e and (loc == e or loc.startswith(e + '.'))) or ('.' not in e and e in segs):
+                usadas[e] += 1
+                hit = True
+        return hit
+
+    resumo, saidas, excluidos = [], {}, []
     for area, nome in AREAS.items():
         cmap, centrais = {}, []
         for r in rows:
@@ -102,6 +130,9 @@ def main(xlsx, ckjson):
             cat = r[9]
             if cat is None:
                 continue                       # linha que só declara o nó A/B
+            if fora(r[7]):
+                excluidos.append(r[7])
+                continue
             if cat not in tipos:
                 raise SystemExit(f'Tipo sem checklist no book: {cat} ({r[7]})')
             n = 0 if r[3] is None else (1 if r[5] is None else 2)
@@ -112,11 +143,10 @@ def main(xlsx, ckjson):
             if n == 0 and ct not in PSEUDO:
                 it['cen'] = 1                  # equipamento central: recebe as 7 tarefas comuns de Operação
             cmap[ct]['itens'].append(it)
+        centrais = [c for c in centrais if c['itens']]   # central sem nenhum equipamento restante sai da lista
         locs = [i['loc'] for c in centrais for i in c['itens']]
         assert len(locs) == len(set(locs)), f'local repetido na área {area}'
-        json.dump({'area': area, 'nome': nome, 'centrais': centrais},
-                  open(os.path.join(RAIZ, 'dados', f'area-{area}.json'), 'w', encoding='utf-8'),
-                  ensure_ascii=False, separators=(',', ':'))
+        saidas[f'area-{area}.json'] = {'area': area, 'nome': nome, 'centrais': centrais}
         nck = nit = 0
         for c in centrais:
             for i in c['itens']:
@@ -125,12 +155,22 @@ def main(xlsx, ckjson):
                     nit += len(listas[k]) + (7 if (s == 'OPE' and i.get('cen')) else 0)
         resumo.append({'id': area, 'nome': nome, 'centrais': len(centrais), 'equip': len(locs), 'checklists': nck, 'itens': nit})
 
+    sem_uso = [e for e, n in usadas.items() if n == 0]
+    if sem_uso:
+        raise SystemExit('NADA FOI GRAVADO. Linhas de expansao.txt que não correspondem a nenhum equipamento: ' + ', '.join(sem_uso))
+    # só grava depois de tudo conferido
+    json.dump({'tipos': tipos_out, 'listas': listas, 'opeCom': opecom},
+              open(os.path.join(RAIZ, 'dados', 'listas.json'), 'w', encoding='utf-8'),
+              ensure_ascii=False, separators=(',', ':'))
+    for nome_arq, dado in saidas.items():
+        json.dump(dado, open(os.path.join(RAIZ, 'dados', nome_arq), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
     json.dump(resumo, open(os.path.join(RAIZ, 'dados', 'areas.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     json.dump(reg, open(REG, 'w', encoding='utf-8'), ensure_ascii=False, indent=1, sort_keys=True)
     for a in resumo:
         print(f"Área {a['id']}: {a['centrais']} grupos, {a['equip']} equipamentos, {a['checklists']} checklists, {a['itens']} itens")
     novos = [a for a in avisos if a.startswith('novo')]
     print(f'{len(novos)} IDs novos atribuídos;', len(avisos) - len(novos), 'itens só no registro')
+    print(f'Expansão: {len(exclusoes)} linhas em expansao.txt, {len(excluidos)} equipamentos fora do app')
 
 
 if __name__ == '__main__':
