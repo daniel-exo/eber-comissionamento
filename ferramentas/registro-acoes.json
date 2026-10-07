@@ -1,0 +1,917 @@
+{
+ "proximo": 153,
+ "acoes": {
+  "1": {
+   "tag": "200.MOE-2001",
+   "texto": "Não conformidade a instalação dos transmissores de nível",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "2": {
+   "tag": "200.PRM-2001",
+   "texto": "Pre-masher (misturador horizontal de pasta) - Equipamento ainda não comissionado",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "3": {
+   "tag": "200.PRM-2001.VBB-2003",
+   "texto": "Não abre 100%, será necessário mudar a posição da FCV-2006",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "4": {
+   "tag": "400.TNQ-4007.BCE-4009A",
+   "texto": "Não liberada devido a falta de acesso às válvulas de recalque da bomba",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "5": {
+   "tag": "400.TNQ-4007.BCE-4009B",
+   "texto": "Não liberada devido a falta de acesso às válvulas de recalque da bomba",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "6": {
+   "tag": "400.TNQ-4007.BCE-4009C",
+   "texto": "Não liberada devido a falta de acesso às válvulas de recalque da bomba",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "7": {
+   "tag": "400.TNQ-4007.BCE-4009D",
+   "texto": "Não liberada devido a falta de acesso às válvulas de recalque da bomba",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "8": {
+   "tag": "400",
+   "texto": "Falta o corrimão nos tanque de químicos.",
+   "data": "2026-09-25",
+   "situacao": "app"
+  },
+  "9": {
+   "tag": "400.DCT-4001",
+   "texto": "Painel IHM de comando faltando acabamento e fiações de alimentação e comandos",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "10": {
+   "tag": "400.DCT-4002",
+   "texto": "Painel IHM de comando faltando acabamento e fiações de alimentação e comandos",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "11": {
+   "tag": "400.DCT-4003",
+   "texto": "Painel IHM de comando faltando acabamento e fiações de alimentação e comandos",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "12": {
+   "tag": "400.DCT-4004",
+   "texto": "Painel IHM de comando faltando acabamento e fiações de alimentação e comandos",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "13": {
+   "tag": "400.DCT-4001.FCV-40001",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "14": {
+   "tag": "400.DCT-4002.FCV-40002",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "15": {
+   "tag": "400.DCT-4003.FCV-40003",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "16": {
+   "tag": "400.DCT-4004.FCV-40004",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "17": {
+   "tag": "400.DCT-4001.FIT-40001",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "18": {
+   "tag": "400.DCT-4002.FIT-40002",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "19": {
+   "tag": "400.DCT-4003.FIT-40003",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "20": {
+   "tag": "400.DCT-4004.FIT-40004",
+   "texto": "Faltando ligação elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "21": {
+   "tag": "400.DCT-4004",
+   "texto": "Falta instalar a válvula de saida de sólidos decante",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "22": {
+   "tag": "400.DCT-4002.XV-40048",
+   "texto": "Falta parte elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "23": {
+   "tag": "400.DCT-4001.XV-40043",
+   "texto": "Falta parte elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "24": {
+   "tag": "400.DCT-4001.XV-40064",
+   "texto": "Falta parte elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "25": {
+   "tag": "400.DCT-4002.XV-40065",
+   "texto": "Falta parte elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "26": {
+   "tag": "400.DCT-4003.XV-40066",
+   "texto": "Falta parte elétrica e ar comprimido",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "27": {
+   "tag": "400.DCT-4004.XV-40039",
+   "texto": "Faltando mangote de 1\" na entrada de água tratada da decanter",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "28": {
+   "tag": "400.DCT-4001",
+   "texto": "Faltando cabos de alimentação da central de lubrificação",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "29": {
+   "tag": "400.DCT-4002",
+   "texto": "Faltando cabos de alimentação da central de lubrificação",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "30": {
+   "tag": "400.DCT-4003",
+   "texto": "Faltando cabos de alimentação da central de lubrificação",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "31": {
+   "tag": "400.DCT-4004",
+   "texto": "Faltando cabos de alimentação da central de lubrificação",
+   "data": "2026-09-26",
+   "situacao": "app"
+  },
+  "32": {
+   "tag": "400.RED-4001",
+   "texto": "Faltando cobos de ligação dos instrumentos.",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "33": {
+   "tag": "400.RED-4002.SC-40020.SS-40020",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "34": {
+   "tag": "400.RED-4002.SC-40020.TT-40020A",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "35": {
+   "tag": "400.RED-4002.SC-40020.TT-40020B",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "36": {
+   "tag": "400.RED-4002.SC-40020.TT-40020C",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "37": {
+   "tag": "400.RED-4002.SC-40020.TT-40020D",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "38": {
+   "tag": "400.RED-4003.SC-40021.SS-40021",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "39": {
+   "tag": "400.RED-4003.SC-40021.TT-40021A",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "40": {
+   "tag": "400.RED-4003.SC-40021.TT-40021B",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "41": {
+   "tag": "400.RED-4003.SC-40021.TT-40021C",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "42": {
+   "tag": "400.RED-4003.SC-40021.TT-40021D",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "43": {
+   "tag": "400.RED-4003",
+   "texto": "Corrente travada",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "44": {
+   "tag": "400.RED-4006.SC-40023.SS-40023",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "45": {
+   "tag": "400.RED-4006.SC-40023.TT-40023A",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "46": {
+   "tag": "400.RED-4006.SC-40023.TT-40023B",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "47": {
+   "tag": "400.RED-4006.SC-40023.TT-40023C",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "48": {
+   "tag": "400.RED-4006.SC-40023.TT-40023D",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-27",
+   "situacao": "app"
+  },
+  "49": {
+   "tag": "300",
+   "texto": "Falta manômetro na linha de recirculacao pré-fermentador 01",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "50": {
+   "tag": "300.TNQ-3009.TCP-3009",
+   "texto": "Faltando junta no trocador de recirculacao pre-fermentador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "51": {
+   "tag": "300.TNQ-3001.TCP-3001.TCV-30001",
+   "texto": "Válvula travada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "52": {
+   "tag": "400.CHL-4001.XV-40008",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "53": {
+   "tag": "400.CHL-4002.XV-40014",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "54": {
+   "tag": "400.RED-4004",
+   "texto": "Falta emendar a corrente e fechar as tampas",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "55": {
+   "tag": "400.DCT-4003.XV-40037",
+   "texto": "Tagueamento incorreto",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "56": {
+   "tag": "400.DCT-4003.XV-40054",
+   "texto": "Tagueamento incorreto",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "57": {
+   "tag": "400.DCT-4004.XV-40067",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "58": {
+   "tag": "300.TNQ-3012.VBB-3023",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "59": {
+   "tag": "400.DCT-4001.VES-4008",
+   "texto": "Válvula não instalada, verificar no P&ID",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "60": {
+   "tag": "400.DCT-4002.VES-4009",
+   "texto": "Válvula não instalada, verificar no P&ID",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "61": {
+   "tag": "400.DCT-4003.VES-4010",
+   "texto": "Válvula não instalada, verificar no P&ID",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "62": {
+   "tag": "400.DCT-4004.VES-4011",
+   "texto": "Válvula não instalada, verificar no P&ID",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "63": {
+   "tag": "200.TNQ-2001.AIT-20001",
+   "texto": "Transmissor não instalado",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "64": {
+   "tag": "400.RED-4005",
+   "texto": "Redler sem acesso",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "65": {
+   "tag": "400.RED-4011",
+   "texto": "Acesso inseguro",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "66": {
+   "tag": "400.RED-4016",
+   "texto": "Acesso inseguro",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "67": {
+   "tag": "400.RED-4015",
+   "texto": "Falta colocar a vedações e fechar tampas",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "68": {
+   "tag": "400.RED-4005.SC-40013",
+   "texto": "Faltam cabos de aliementação dos motores",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "69": {
+   "tag": "400.RED-4005.SC-40013.SS-40013",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "70": {
+   "tag": "400.RED-4005.SC-40013.TT-40013A",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "71": {
+   "tag": "400.RED-4005.SC-40013.TT-40013B",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "72": {
+   "tag": "400.RED-4005.SC-40013.TT-40013C",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "73": {
+   "tag": "400.RED-4005.SC-40013.TT-40013D",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "74": {
+   "tag": "400.RED-4008",
+   "texto": "Redler fora da base",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "75": {
+   "tag": "200.TNQ-2001.TCV-20003",
+   "texto": "Necessária substituição do atuador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "76": {
+   "tag": "200.TNQ-2003.PSV-20003",
+   "texto": "Válvula sem lacre de calibração",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "77": {
+   "tag": "200.TNQ-2002.XV-20014",
+   "texto": "Necessário aperto do atuador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "78": {
+   "tag": "200.TNQ-2002.XV-20017",
+   "texto": "Necessário aperto do atuador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "79": {
+   "tag": "400.RED-4016",
+   "texto": "Falta colocar a vedações e fechar tampas",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "80": {
+   "tag": "400.ECA-4001.SC-40033",
+   "texto": "Motor não instalado",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "81": {
+   "tag": "400.ECA-4001.SC-40033.LS-40033",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "82": {
+   "tag": "400.ECA-4001.SC-40033.SS-40033",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "83": {
+   "tag": "400.ECA-4001.SC-40033.TT-40033A",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "84": {
+   "tag": "400.ECA-4001.SC-40033.TT-40033B",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "85": {
+   "tag": "400.ECA-4001.SC-40033.TT-40033C",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "86": {
+   "tag": "400.ECA-4001.SC-40033.TT-40033D",
+   "texto": "Faltando sensor e cabeamento",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "87": {
+   "tag": "400.RED-4016",
+   "texto": "Botoeira de emergência não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "88": {
+   "tag": "400.RED-4014.SC-40031",
+   "texto": "Motor não instalado",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "89": {
+   "tag": "400.TNQ-4001",
+   "texto": "Escada e guarda corpo não finalizados",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "90": {
+   "tag": "200.TNQ-2004.PSV-20004",
+   "texto": "Válvula sem lacre de calibração",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "91": {
+   "tag": "200.TNQ-2004.XV-20016",
+   "texto": "Necessário reaperto",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "92": {
+   "tag": "200.RGN-2001",
+   "texto": "Falta isolamento nas linhas de CIP do regenerador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "93": {
+   "tag": "200.RGN-2002",
+   "texto": "Falta isolamento nas linhas de CIP do regenerador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "94": {
+   "tag": "300.TNQ-3009.CLT-3017",
+   "texto": "Vazamento na linha do cabeçote",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "95": {
+   "tag": "200.RGN-2001.XV-20005",
+   "texto": "Faltam parafusos",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "96": {
+   "tag": "200.RGN-2001.XV-20011",
+   "texto": "Válvula não abre 100% por conta de posição do filtro adjacente",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "97": {
+   "tag": "200.RGN-2001.XV-20025",
+   "texto": "Válvula desmontada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "98": {
+   "tag": "200.RGN-2001.XV-20027",
+   "texto": "Válvula não abre 100% por conta de posição do filtro adjacente",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "99": {
+   "tag": "200.RGN-2001.XV-20027",
+   "texto": "Vazamento de AC",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "100": {
+   "tag": "200.RGN-2001.XV-20038",
+   "texto": "Faltam parafusos",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "101": {
+   "tag": "200.RGN-2001.XV-20038",
+   "texto": "Precisa ser mudada de posição, pois impede a retirada do atuador da XV-20055",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "102": {
+   "tag": "200.RGN-2001.XV-20055",
+   "texto": "Atuador não pode ser retirada pela posição da XV-20038",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "103": {
+   "tag": "400.TNQ-4005.VBB-4086",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "104": {
+   "tag": "400.TNQ-4010.VBB-4092",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "105": {
+   "tag": "400.TNQ-4009.VBB-4091",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "106": {
+   "tag": "400.TNQ-4003.VBB-4084",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "107": {
+   "tag": "400.TNQ-4003",
+   "texto": "Linha de sensor na sucção das bombas de condensado alcoólico dos Chillers",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "108": {
+   "tag": "200.RGN-2001.XV-20055",
+   "texto": "Faltam parafusos",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "109": {
+   "tag": "200.RGN-2002.XV-20007",
+   "texto": "Faltam parafusos",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "110": {
+   "tag": "200.RGN-2002.XV-20009",
+   "texto": "Vazamento no filtro regulador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "111": {
+   "tag": "200.RGN-2002.XV-20013",
+   "texto": "Vazamento no filtro regulador",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "112": {
+   "tag": "300.TNQ-3001.TCP-3001",
+   "texto": "Flanges de entrada e saída de água frouxas",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "113": {
+   "tag": "200.RGN-2002.XV-20040",
+   "texto": "Faltam parafusos",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "114": {
+   "tag": "200.RGN-2002.XV-20056",
+   "texto": "Faltam parafusos",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "115": {
+   "tag": "200.TCP-2001.VBB-2022",
+   "texto": "Faltam parafusos",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "116": {
+   "tag": "700.TNQ-7008",
+   "texto": "Falta ligação na linha de Flegma massa para os pré fermentadores",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "117": {
+   "tag": "700",
+   "texto": "Válvula de retorno condensado de vinhaça falta apertar",
+   "data": "2026-09-28",
+   "situacao": "app"
+  },
+  "118": {
+   "tag": "400.SCD-4001.VBB-4088",
+   "texto": "Válvula não instalada",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "119": {
+   "tag": "400.SCD-4001.XV-40006",
+   "texto": "Cabo rompido e falta mangueira de ar comprimido",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "120": {
+   "tag": "400.DCT-4001.XV-40029",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "121": {
+   "tag": "400.DCT-4001.XV-40030",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "122": {
+   "tag": "400.DCT-4002.XV-40033",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "123": {
+   "tag": "400.DCT-4002.XV-40034",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "124": {
+   "tag": "400.DCT-4003.XV-40037",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "125": {
+   "tag": "400.DCT-4003.XV-40038",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "126": {
+   "tag": "400.DCT-4004.XV-40041",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "127": {
+   "tag": "400.DCT-4004.XV-40042",
+   "texto": "Necessária instalação de válvula de bloqueio de água tratada para as decanters",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "128": {
+   "tag": "400.SCD-4001.PCV-40005",
+   "texto": "Faltam cabos de comando",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "129": {
+   "tag": "400.SCD-4002.XV-42291",
+   "texto": "Faltam cabos e ar comprimido",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "130": {
+   "tag": "400.SCD-4002.XV-40025",
+   "texto": "Faltam cabos e ar comprimido",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "131": {
+   "tag": "400.SCD-4002.XV-42311",
+   "texto": "Faltam cabos e ar comprimido",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "132": {
+   "tag": "200",
+   "texto": "Ausência de guarda corpo no piso tanque de fubá",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "133": {
+   "tag": "200.TNQ-2002",
+   "texto": "Faltam junta e parafusos",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "134": {
+   "tag": "300.TNQ-3012.BCE-3012A.VBB-3017",
+   "texto": "Vazamento",
+   "data": "2026-09-29",
+   "situacao": "app"
+  },
+  "135": {
+   "tag": "400.SCD-4001.R-1150-01A.XV-41312",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "136": {
+   "tag": "400.SCD-4001.R-1150-01A.XV-41313",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "137": {
+   "tag": "400.SCD-4001.R-1150-01A.XV-41314",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "138": {
+   "tag": "400.SCD-4002.R-1150-01B.XV-42312",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "139": {
+   "tag": "400.SCD-4002.R-1150-01B.XV-42313",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "140": {
+   "tag": "400.SCD-4002.R-1150-01B.XV-42314",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "141": {
+   "tag": "400.SCD-4003.R-1150-01C.XV-43312",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "fora do app (equipamento da expansão)"
+  },
+  "142": {
+   "tag": "400.SCD-4003.R-1150-01C.XV-43313",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "fora do app (equipamento da expansão)"
+  },
+  "143": {
+   "tag": "400.SCD-4003.R-1150-01C.XV-43314",
+   "texto": "Válvula de CO2 não instalada",
+   "data": "2026-09-30",
+   "situacao": "fora do app (equipamento da expansão)"
+  },
+  "144": {
+   "tag": "300.TNQ-3002.XV-30036",
+   "texto": "Válvula vazando",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "145": {
+   "tag": "300.TNQ-3002.TCP-3002",
+   "texto": "Necessário retirar flange cego",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "146": {
+   "tag": "300.TNQ-3001.TCP-3001",
+   "texto": "Necessário retirar flange cego",
+   "data": "2026-09-30",
+   "situacao": "app"
+  },
+  "147": {
+   "tag": "200.MOE-2001.XM-20001",
+   "texto": "Sem acesso aos filtros de alívio dos martelos pneumáticos",
+   "data": "2026-10-01",
+   "situacao": "app"
+  },
+  "148": {
+   "tag": "200.MOE-2001.XM-20002",
+   "texto": "Sem acesso aos filtros de alívio dos martelos pneumáticos",
+   "data": "2026-10-01",
+   "situacao": "app"
+  },
+  "149": {
+   "tag": "200.RGN-2002.XV-20013",
+   "texto": "Será necessária a troca do filtro regulador",
+   "data": "2026-10-01",
+   "situacao": "app"
+  },
+  "150": {
+   "tag": "700.TNQ-7002.BCE-7002.PI-70012",
+   "texto": "Indicador não instalado",
+   "data": "2026-10-01",
+   "situacao": "app"
+  },
+  "151": {
+   "tag": "200.RGN-2001.XV-20038",
+   "texto": "Sem alimentação de ar",
+   "data": "2026-10-01",
+   "situacao": "app"
+  },
+  "152": {
+   "tag": "300.TRL-3001.VBB-3090",
+   "texto": "Sem cabeamento",
+   "data": "2026-10-01",
+   "situacao": "app"
+  }
+ }
+}

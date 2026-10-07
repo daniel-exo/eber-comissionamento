@@ -12,3 +12,8 @@ BCE-780      # área 700 (grupo B)
 BCE-781      # área 700 (grupo B)
 SC-70023     # área 700 (grupo B)
 VEN-780      # área 700 (grupo B)
+
+# 07/10/2026 — mais equipamentos da expansão (pedido do Daniel)
+TNQ-4004     # tanque de condensado alcoólico do chiller 03, com tudo abaixo dele
+TNQ-4006     # tanque de condensado limpo do chiller 03, com tudo abaixo dele
+TNQ-4011     # tanque de selo de condensado do secador 03, com tudo abaixo dele

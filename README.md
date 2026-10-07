@@ -97,6 +97,51 @@ python ferramentas/gerar_dados.py EBER_Lista_de_Equipamentos_Consolidado.xlsx fe
 
 **Operação.** As 7 tarefas comuns (`OPE-COM-01` a `07`) entram apenas nos tags que são **equipamento central** na lista (coluna "TAG DO EQUIPAMENTO CENTRAL", fora dos grupos A/B). As tarefas específicas de cada tipo valem para todos os tags do tipo. O Book de Comissionamento segue a mesma regra e usa os mesmos códigos: ele lê este registro de IDs ao ser gerado.
 
+## Ações de inspeção (por área)
+
+Cada área tem uma lista de ações levantadas nas inspeções. No app, a tela da área mostra o cartão **Ações**, que abre a lista; a pessoa dá o check quando a ação é concluída. A matriz por equipamento não muda.
+
+**De onde vem a lista.** Da planilha de ações (aba com as colunas `Tag`, `Problema` e, se houver, `Data adicionado` e `Nº`). O `Tag` é o local completo do equipamento na lista (ex.: `400.DCT-4001.FCV-40001`) ou só a área (ex.: `400`), quando a ação é geral da área.
+
+**Para incluir ou alterar ações:**
+
+```
+python ferramentas/gerar_acoes.py "Ações do Checklist de Comissionamento.xlsx" conferencia.csv
+```
+
+O gerador valida a planilha, mostra o relatório (novas, alteradas, que saíram, fora do app, tag não encontrado) e grava `dados/acoes.json` e `ferramentas/registro-acoes.json`. Com erro, não grava nada. Depois, suba esses dois arquivos para o GitHub. As pessoas veem as ações novas na próxima vez que abrirem o app com internet.
+
+**O número da ação (o que mantém a base).** Cada ação tem um número que nunca muda e nunca é reaproveitado; no app ele aparece como `AC-0012`. O check fica guardado no banco por esse número.
+- Com a coluna `Nº` na planilha (recomendado): vale o número da planilha. Digite o número (valor fixo, sem fórmula); cada linha nova recebe o próximo. Assim dá para reordenar, filtrar e corrigir textos sem perder nada.
+- Linha sem `Nº`: o gerador reconhece a ação pelo tag e pelo texto e mantém o número que ela já tinha; se não reconhecer, trata como ação nova.
+- O arquivo `ferramentas/registro-acoes.json` guarda o número de cada ação. Se um número da planilha aparecer com outro tag **e** outro texto, o gerador para: é sinal de número reaproveitado ou de planilha renumerada.
+- Ação que sai da planilha some do app; o número fica reservado e o check continua no banco.
+- Ficam fora do app, com o número reservado: ações de equipamentos do `ferramentas/expansao.txt` e de áreas que o app não tem.
+
+**No banco.** Os checks ficam na mesma coleção `centrais`, em um documento por área (`200.ACOES`, `300.ACOES`…), com uma entrada por ação:
+
+```
+centrais/200.ACOES
+{
+  area: "200", central: "ACOES", por: "...", em: ...,
+  ck: {
+    "200:ACOES:AC-0012~ACO": { checked: { "AC-0012": true }, por: "fulano@empresa.com", em: <data e hora> },
+    ...
+  }
+}
+```
+
+A gravação usa a mesma função dos checklists (`store.marcarItem`), uma ação por vez, e as regras do banco são as mesmas. Como cada ação tem a própria entrada, `por` e `em` dizem quem concluiu cada uma e quando. O backup JSON já inclui as ações; a exportação tem também o botão **Ações (CSV)**, com uma linha por ação.
+
+## Retirar equipamentos do app (ex.: fase de expansão)
+
+1. Liste os equipamentos em `ferramentas/expansao.txt`, um tag por linha (ex.: `TNQ-4011`) ou o local completo da lista (ex.: `400.TNQ-4011.AGT-4011`). Cada equipamento sai junto com tudo o que está abaixo dele.
+2. Gere os dados: `python ferramentas/gerar_dados.py <lista.xlsx> ferramentas/checklists.json`. Se alguma linha do `expansao.txt` não corresponder a nenhum equipamento, o gerador para **sem gravar nada**.
+3. Confira antes de publicar: `python ferramentas/conferir.py <cópia da pasta dados que está no ar> dados [backup.json]`. Só publique com **RESULTADO: APROVADO**: códigos dos itens idênticos, nenhum equipamento que fica alterado, todos os que saem explicados pelo `expansao.txt`.
+4. Faça o backup JSON pelo app e suba para o GitHub, num único envio, só os arquivos da pasta `dados/` que mudaram.
+
+O banco não é tocado: as marcações dos equipamentos retirados continuam guardadas (aparecem no backup JSON, não na planilha CSV) e voltam a aparecer se a linha for retirada do `expansao.txt`. Para desfazer, basta subir de novo os arquivos de `dados/` anteriores.
+
 ## Atualizações do app
 
 O app se atualiza sozinho: ao abrir, usa a versão guardada e baixa a nova em segundo plano, que passa a valer na abertura seguinte. Ao publicar uma mudança grande, aumente o número em `eber-comiss-v2` no `sw.js` (v3, v4…) para renovar o que fica guardado nos aparelhos.
@@ -112,8 +157,8 @@ O app se atualiza sozinho: ao abrir, usa a versão guardada e baixa a nova em se
 | `js/vendor/firebase.js` | SDK do Firebase 12.19.0 empacotado (para funcionar offline) |
 | `sw.js`, `manifest.webmanifest` | Instalação como aplicativo e funcionamento offline |
 | `firestore.rules` | Regras de segurança do banco |
-| `dados/` | Áreas, equipamentos e checklists (gerados) |
-| `ferramentas/` | Gerador dos dados e registro de IDs |
+| `dados/` | Áreas, equipamentos, checklists e ações (gerados) |
+| `ferramentas/` | Geradores dos dados e das ações, registros de códigos e conferências |
 
 ## Desenvolvimento local
 
