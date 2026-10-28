@@ -1,5 +1,5 @@
 {
- "proximo": 153,
+ "proximo": 164,
  "acoes": {
   "1": {
    "tag": "200.MOE-2001",
@@ -911,6 +911,72 @@
    "tag": "300.TRL-3001.VBB-3090",
    "texto": "Sem cabeamento",
    "data": "2026-10-01",
+   "situacao": "app"
+  },
+  "153": {
+   "tag": "400.SCD-4002.XV-40025",
+   "texto": "Finalizar cabeamento",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "154": {
+   "tag": "300.TRL-3001.XV-30045",
+   "texto": "Torre CO2 / Sem posicionador e sem acesso",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "155": {
+   "tag": "300.A.XV-30001",
+   "texto": "Válvula travada e desalinhada",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "156": {
+   "tag": "400.SCD-4001.XV-41291",
+   "texto": "Fazer a troca do sensor de indicação de válvula totalmente aberta ou totalmente fechada / ORCA",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "157": {
+   "tag": "400.SCD-4001.XV-41311",
+   "texto": "Confirmar com o projeto",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "158": {
+   "tag": "300.TNQ-3002.TCP-3002.XV-30047",
+   "texto": "Válvula Travada e desalinhada",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "159": {
+   "tag": "300.TNQ-3009.TT-30009",
+   "texto": "Trocar o cabeamento",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "160": {
+   "tag": "400.TNQ-4010.XV-40012",
+   "texto": "Não instalada",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "161": {
+   "tag": "400.TNQ-4010.XV-40013",
+   "texto": "Não instalada",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "162": {
+   "tag": "400.CHL-4002.XV-40014",
+   "texto": "Não Instalada",
+   "data": "2026-10-24",
+   "situacao": "app"
+  },
+  "163": {
+   "tag": "400.SCD-4002.PIT-42212",
+   "texto": "Verificar ligação na remota",
+   "data": "2026-10-24",
    "situacao": "app"
   }
  }
